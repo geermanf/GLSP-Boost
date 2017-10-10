@@ -1,0 +1,23 @@
+
+<div id="sidebar-wrapper">
+  <div class="sidebar"><a class="sidebar__brand" href="#/Home"><i class="sidebar__icon"><img class="sidebar__logo" src="../../../../../assets/images/hx-logo.png" alt="Hexacta Framework"/></i><span>Hexacta Framework</span></a>
+    <p class="sidebar__section-title colapsable" [ngClass]="{collapsed: !show[0]}"><a (click)="showElementos()">Elementos UI</a></p>
+    <ul class="items-collapse collapse" [ngClass]="{in: show[0]}">
+      <li><a routerLink="/Buttons" routerLinkActive="active">Botones</a></li>
+      <li><a routerLink="/Forms" routerLinkActive="active">Formularios</a></li>
+      <li><a routerLink="/Icons" routerLinkActive="active">Íconos</a></li>
+      <li><a routerLink="/Inline" routerLinkActive="active">Elementos Inline</a></li>
+      <li><a routerLink="/List" routerLinkActive="active">Listas</a></li>
+      <li><a routerLink="/Menu" routerLinkActive="active">Menú</a></li>
+      <li><a routerLink="/Title" routerLinkActive="active">Títulos</a></li>
+      <li><a routerLink="/Element-table" routerLinkActive="active">Tablas</a></li>
+    </ul>
+    <p class="sidebar__section-title colapsable" [ngClass]="{collapsed: !show[1]}"><a (click)="showComponentes()">Componentes</a></p>
+    <ul class="items-collapse collapse" [ngClass]="{in: show[1]}">
+      <li><a routerLink="/Flex" routerLinkActive="active">Flex</a></li>
+      <li><a routerLink="/Tables" routerLinkActive="active">Tablas</a></li>
+      <li><a routerLink="/Tabs" routerLinkActive="active">Tabs</a></li>
+    </ul>
+    <p class="sidebar__section-title"> <a routerLink="/Template" routerLinkActive="active">Templates</a></p>
+  </div>
+</div>

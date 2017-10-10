@@ -1,0 +1,7 @@
+{
+    code:  
+            '''
+            <button class='hx-button'>Save</button>
+            <button class='hx-button hx-btn-transparente'>Discard</button>
+            '''
+}

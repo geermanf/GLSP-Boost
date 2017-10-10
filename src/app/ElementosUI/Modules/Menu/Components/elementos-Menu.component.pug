@@ -1,0 +1,193 @@
+doctype html5
+html(lang="es")
+	head
+		title Hexacta Framework Title
+
+	body
+		<partial-sidebar open= 'elementos'></partial-sidebar>
+		div.container.hx-full-container
+			div.main
+				div#wrapper
+					<!-- Sidebar -->
+					div#page-content-wrapper
+						div.container-fluid
+							div.row
+								div.hx-title
+									h2.page__name Menú
+									p.section-description Un menú muestra acciones de navegación agrupadas
+
+								div.block
+									h3.section__title Tipos
+
+									h4(id="acciones-principales" class="section-subtitle") Acciones principales
+
+									p
+										|Si los botones están ubicados debajo de una tabla, deben ser puestos dentro de un div con la clase .lineTableButtons
+
+									p
+										|Los botones para bloquear y desbloquear no conviven, sino que aparece uno u el otro dependiendo de la acción que puede realizarse.
+									
+									div.section-examples
+										button.btn.btn-primary Botón principal
+										button.btn.btn-primary Botón principal
+											i.fa.fa-search
+										div.btn-group([ngClass]="{open: isOpen[0]}" )
+											button((click)="changeShowButton(0)" type="button" class="btn btn-primary dropdown-toggle") Grupo principal de botones <span class="caret"></span>
+											ul.dropdown-menu
+												li
+													a(scrollTo href="" ) Acción
+												li
+													a(scrollTo href="" ) Otra acción
+												li
+													a(scrollTo href="") Otra cosa más
+												li(role="separator" class="divider")
+												li
+													a(scrollTo href="") Link separado
+										button.btn.btn-primary.disabled boton principal deshabilitado
+									div.row
+										div.col-md-12
+											<code-snippet htmlCode='htmlCode' jsCode='jsFile'></code-snippet>
+											//h5 HTML
+											//span(class="btn buttonViewCode" data-idtocollapse="primaryButtonsExample") expandir código
+											//span(class="btn buttonClipboard" data-classtocopy="highlight") Copiar
+											//div#primaryButtonsExample.highlight.minCode
+												pre
+													code
+													|&lt;button class="btn btn-primary">Primary button&lt;/button>
+													|&lt;button class="btn btn-primary">Primary button &lt;i class="fa fa-search">&lt;/i>&lt;/button>
+													|&lt;div class="btn-group">
+													|	&lt;button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Primary button group &lt;span class="caret">&lt;/span>&lt;/button>
+													|	&lt;ul class="dropdown-menu">
+													|		&lt;li>&lt;a href="#">Action&lt;/a>&lt;/li>
+													|		&lt;li>&lt;a href="#">Another action&lt;/a>&lt;/li>
+													|		&lt;li>&lt;a href="#">Something else here&lt;/a>&lt;/li>
+													|		&lt;li role="separator" class="divider">&lt;/li>
+													|		&lt;li>&lt;a href="#">Separated link&lt;/a>&lt;/li>
+													|	&lt;/ul>
+													|&lt;/div>
+													|&lt;div class="btn-group dropup floatButton">
+													|	&lt;button type="button" class="btn btn-primary">Button dropdown right&lt;/button>
+													|	&lt;button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+													|		&lt;span class="caret">&lt;/span>
+													|		&lt;span class="sr-only">Toggle dropdown&lt;/span>
+													|	&lt;/button>
+													|&lt;/div>
+
+								div.block
+									h4(id="acciones-secundarias" class="section-subtitle") Acciones secundarias
+									div.row
+										div.col-md-12
+											div.section-examples
+												button(scrollTo href="" data-canbeblocked="" type="button" class="btn buttonSecondary" data-placement="left" title="block" ) Recibo
+												div.btn-group([ngClass]="{open: isOpen[1]}" )
+													button((click)="changeShowButton(1)" type="button" class="btn buttonSecondary dropdown-toggle" ) Grupo primario de botones <span class="caret"></span>
+													ul.dropdown-menu
+														li
+															a(scrollTo href="" ) Acción
+														li
+															a(scrollTo href="") Otra acción
+														li
+															a(scrollTo href="") Otra cosa más
+														li(role="separator" class="divider")
+														li
+															a(scrollTo href="") Link separado
+										div.col-md-12.noPadding
+											<code-snippet htmlCode='htmlCode' jsCode='jsCode'></code-snippet>
+											//h5 HTML
+											//span(class="btn buttonViewCode" data-idtocollapse="secondaryBlueButtonsExample") Expandir código
+											//span(class="btn buttonClipboard" data-classtocopy="highlight") Copiar
+											//div#secondaryBlueButtonsExample.highlight.minCode
+												pre
+													code
+														|&lt;button href="" data-canbeblocked="" type="button" class="btn buttonSecondary" data-placement="left" title="block">Invoice&lt;/button>
+														|&lt;div class="btn-group">
+														|	&lt;button type="button" class="btn buttonSecondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+														|	Primary button group &lt;span class="caret">&lt;/span>
+														|	&lt;/button>
+														|	&lt;ul class="dropdown-menu">
+														|		&lt;li>&lt;a href="#">Action&lt;/a>&lt;/li>
+														|		&lt;li>&lt;a href="#">Another action&lt;/a>&lt;/li>
+														|		&lt;li>&lt;a href="#">Something else here&lt;/a>&lt;/li>
+														|		&lt;li role="separator" class="divider">&lt;/li>
+														|		&lt;li>&lt;a href="#">Separated link&lt;/a>&lt;/li>
+														|	&lt;/ul>
+														|&lt;/div>
+														|&lt;div class="btn-group dropup floatButton">
+														|	&lt;button type="button" class="btn btn-primary">Botón desplegable derecho&lt;/button>
+														|	&lt;button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+														|		&lt;span class="caret">&lt;/span>
+														|		&lt;span class="sr-only">Abrir desplegable&lt;/span>
+														|	&lt;/button>
+														|&lt;/div>
+
+									div.block
+										h4(id="botones-con-iconos" class="section-subtitle") Botones con íconos
+										div.row
+											div.col-md-12
+												div.section-examples
+													button(href="" data-canbeblocked="" type="button" class="btn btn-default btnBlockUnblock" data-placement="left" title="block") Bloquear <i class="fa fa-lock"></i>
+													button(href="" data-canbeunblocked="" type="button" class="btn btn-default btnBlockUnblock" data-placement="left" title="unblock") Desbloquear <i class="fa fa-unlock"></i>
+													button(href="" data-canbeblocked="" type="button" class="btn btn-default btnBlockUnblock disabled" data-placement="left" title="block") Bloquear <i class="fa fa-lock"></i>
+													button(href="" data-canbeunblocked="" type="button" class="btn btn-default btnBlockUnblock disabled" data-placement="left" title="unblock") Desbloquear <i class="fa fa-unlock"></i>
+											div.col-md-12.noPadding
+												<code-snippet htmlCode='htmlCode' jsCode='jsCode'></code-snippet>
+												//h5 HTML
+												//span(class="btn buttonClipboard" data-classtocopy="highlight") Copiar
+												//div.section-examples
+													pre
+														code
+														|	&lt;button href="" data-canbeblocked="" type="button" class="btn btn-default btnBlockUnblock" data-placement="left" title="block">Block &lt;i class="fa fa-lock">&lt;/i>&lt;/button>
+														|	&lt;button href="" data-canbeunblocked="" type="button" class="btn btn-default btnBlockUnblock" data-placement="left" title="unblock">Unblock &lt;i class="fa fa-unlock">&lt;/i>&lt;/button>
+														|	&lt;button href="" data-canbeblocked="" type="button" class="btn btn-default btnBlockUnblock disabled" data-placement="left" title="block">Block &lt;i class="fa fa-lock">&lt;/i>&lt;/button>
+														|	&lt;button href="" data-canbeunblocked="" type="button" class="btn btn-default btnBlockUnblock disabled" data-placement="left" title="unblock">Unblock &lt;i class="fa fa-unlock">&lt;/i>&lt;/button>
+										div.row
+											div.col-md-12.paddingBottom
+												p Botones sin íconos
+												div.section-examples
+													button(href="" data-canbeblocked="" type="button" class="btn btn-default" data-placement="left" title="Cancel") Cancelar
+													button(href="" data-canbeblocked="" type="button" class="btn btn-default disabled" data-placement="left" title="Cancel") Cancelar
+											div.col-md-12.noPadding
+												<code-snippet htmlCode='htmlCode' jsCode='jsCode'></code-snippet>
+												//h5 HTML
+												//span(class="btn buttonClipboard" data-classtocopy="highlight") Copiar
+												//div.section-examples
+													pre
+														code
+														|	&lt;button href="" data-canbeblocked="" type="button" class="btn btn-default" data-placement="left" title="Cancel"> Cancel&lt;/button>
+														|	&lt;button href="" data-canbeblocked="" type="button" class="btn btn-default disabled" data-placement="left" title="Cancel"> Cancel&lt;/button>
+					div.nav-section-container
+						div.nav-section
+							h4 Botones
+							ul
+								li 
+									span([ngClass]="{collapsed: !show}")
+										a((click)="changeShow()" class="link-section" scrollTo href="#tipos") Tipos
+											i(class="fa fa-caret-down")
+									ul([ngClass]="{in: show}" id="tipos" class="items-collapse collapse")
+										li
+											a(scrollTo href="#acciones-principales") Acciones principales
+										li
+											a(scrollTo href="#acciones-secundarias") Acciones secundarias
+										li
+											a(scrollTo href="#botones-con-iconos") Botones con íconos
+
+								//li 
+									a(class="link-section collapsed" data-toggle="collapse" href="#contenido" aria-expanded="false" aria-controls="collapseExample") Contenidos
+										i(class="fa fa-caret-down")
+									ul(id="contenido" class="items-collapse collapse")
+										li
+											a(href="#") Item 1
+								//li 
+									a(class="link-section collapsed" data-toggle="collapse" href="#estados" aria-expanded="false" aria-controls="collapseExample") Estados
+										i(class="fa fa-caret-down")
+									ul(id="estados" class="items-collapse collapse")
+										li
+											a(href="#") Item 1
+								//li 
+									a(class="link-section collapsed" data-toggle="collapse" href="#variaciones" aria-expanded="false" aria-controls="collapseExample") Variaciones
+										i(class="fa fa-caret-down")
+									ul(id="variaciones" class="items-collapse collapse")
+										li
+											a(href="#") Item 1
+		<partial-footer></partial-footer>
+

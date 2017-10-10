@@ -1,0 +1,18 @@
+NOMENCLATURAS BEM
+
+Identificamos si el class es para un bloque o un elemento.
+
+Si es un bloque se pone el nombre del bloque como class. 
+Ej: .card
+
+Si es un elemento se le pone como prefijo el nombre del bloque al que pertenece seguido del nombre del elemento,
+utilizando doble guiones bajos. 
+Ej: .card__title
+
+Si es una class que modifica el aspecto de un bloque o elemento se le agrega el modificador al final de la class
+utilizando doble guiones medios. 
+Ej: card__title--highlighted
+Ej: card--highlighted
+
+Si un bloque o elemento tiene un nombre compuesto usamos guiones medios simples.
+Ej: .navbar-nab--fixed

@@ -1,0 +1,37 @@
+/*         
+Framework Hexactico
+
+La siguiente es una herramienta de desarrollo web, basada en Bootstrap, creada y mantenida por Hexacta.
+2016 - 2017
+
+/*****************************************************/
+/*****************  Importaciones  *******************/
+/*****************************************************/
+
+// Base
+@import "base/bootstrap";
+@import "base/font-awesome";
+@import "base/web-fonts";
+
+// Toolbox
+@import "toolbox/variables";
+@import "toolbox/utilidades";
+
+// Estilos que usa el sitio del Framework
+@import "layout/layout";
+
+// Modules
+@import "modules/flexbox";
+@import "modules/listas";
+@import "modules/inline";
+@import "modules/titles";
+@import "modules/tables";
+@import "modules/tabs";
+@import "modules/buttons";
+
+// Fuentes
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+
+// Templates
+@import "templates/template-1";

@@ -1,0 +1,70 @@
+/*****************************************************/
+/**************** Variables Framework ****************/
+/*****************************************************/
+
+// Colores Base
+$color-base: #000;
+$base-inv: invert($color-base);
+$base_dos: #111;
+$texto: #7c8c95;
+$negro-hx: #061b2b;
+$oscuro: #16262b;
+$acento: #00ffd9;
+
+// Colores Identidad Hexacta
+$color-primario: #00af8b;
+$cl-pr-base-oscura: #009b79;
+$cl-pr-base-oscura-dos: #007f63;
+$cl-pr-base-claro: #00bf95;
+$cl-pr-base-claro-dos: #02d0a3;
+$cl-pr-base-claro-tres: #00b08c;
+
+// varios
+$rosa: #ff1865;
+$gris: #e0e1e2;
+$cl-oscuro-base-oscura: #060b0c;
+
+// botones
+$hx-btn-default: $negro-hx;
+$hx-btn-default-border: $negro-hx;
+$hx-btn-color: #fff;
+$hx-btn-primary: #009BE4;
+$hx-btn-positive: #1BBB44;
+$hx-btn-negative: #FF0000;
+
+//Tamano botones
+$mini: scale(0.4);
+$tiny: scale(0.6);
+$small: scale(0.8);
+$medium: scale(1.2);
+$large: scale(1.4);
+$big: scale(1.6);
+$huge: scale(1.8);
+
+
+// Fuentes
+$base-font-size: 16px;
+$small-font-size: ( 90% * $base-font-size ) / 100%;
+$smaller-font-size: ( 65% * $base-font-size ) / 100%;
+$smallest-font-size: ( 50% * $base-font-size ) / 100%;
+
+// 100,100i,300,300i,400,400i,500,500i,600,600i,700,700i,900,900i
+$font-thin: 100;
+$font-light: 300;
+$font-regular: 400;
+$font-medium: 500;
+$font-semi-bold: 600;
+$font-bold: 700;
+$font-black: 900;
+
+
+$fuente-opens: 'Open Sans', sans-serif;
+$fuente-montserrat: 'Montserrat', sans-serif;
+// en caso de que se quiera cambiar la fuente principal y secundaria sin afectar las que ya existen
+$fuentePrincipal: $fuente-opens;
+$fuenteTitulares: $fuente-montserrat;
+
+//Shadows
+$shadow-titulos: 0px 1px 2px grey;
+$shadow-parrafos: 0px 0px 10px rgba(0, 0, 0, 0.2);
+$shadow-interno: inset 0px -2px 8px #00b793;

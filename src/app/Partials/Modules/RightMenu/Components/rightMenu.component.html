@@ -1,0 +1,14 @@
+<div class="nav-section-container">
+    <div class="nav-section">
+      <h4>{{pagina}}</h4>
+      <ul>
+          <li *ngFor='let titulo of titulos'> 
+          <span [ngClass]="{collapsed: (!(activeKey === titulo.key) && !(show === titulo.key))}"><a class="link-section" (click)="changeShow(titulo.key)">{{titulo.key}}<i class="fa fa-caret-down"></i></a></span>
+            <ul class="items-collapse collapse" [ngClass]="{in: ((activeKey === titulo.key) || (show === titulo.key))}" id="tipos">
+              <li *ngFor='let subtitulo of titulo.value' [ngClass]='{activeTit: state === subtitulo}'><a scrollTo="scrollTo" href="#{{subtitulo}}">{{subtitulo}}</a></li>
+            </ul>
+          </li>
+        </ul>
+    </div>
+</div> 
+ 

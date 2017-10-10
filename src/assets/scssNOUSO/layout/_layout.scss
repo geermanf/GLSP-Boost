@@ -1,0 +1,278 @@
+
+/* ================================================================
+=  Base Styles 
+=  ================================================================ */
+
+@import "../variables";
+
+html, body {@include x-rem(font-size,16px)}
+
+	html, body, [class*="hx-"]{font-family: $fuentePrincipal;}
+
+	body {
+		font-family: $fuentePrincipal, sans-serif;
+		font-size: 14px;
+		line-height: 1.42857143;
+		color: #333;
+		background-color: #fff;	
+		padding-bottom: 0;
+	}
+	a {
+	    color: #009f93;
+	    text-decoration: none;
+	}
+
+	a:focus, a:hover, a.current {
+	    color: #009f93;
+	    text-decoration: underline;
+	}
+	.hx-full-container {
+		width: 100% !important;
+		font-family: 'Open Sans', sans-serif;
+	}
+
+	@media (min-width: 1200px) {
+		.container-inner {
+		    width: 96%;
+		}
+		.navbar-right-inner {
+		    float: right;
+		}
+	}
+
+
+/* */
+
+/* ================================================================
+=  Buttons 
+=  ================================================================ */
+
+	.btn {
+		border-radius: 0;
+	}
+	.btn-primary.active.focus, .btn-primary.active:focus, .btn-primary.active:hover, .btn-primary:active.focus, .btn-primary:active:focus, .btn-primary:active:hover, .open>.dropdown-toggle.btn-primary.focus, .open>.dropdown-toggle.btn-primary:focus, .open>.dropdown-toggle.btn-primary:hover {
+	  color: #fff;
+	  background-color: #004e47;
+	  border-color: #122b40;
+	}
+
+	.btn-primary.disabled.focus, .btn-primary.disabled:focus, .btn-primary.disabled:hover, .btn-primary[disabled].focus, .btn-primary[disabled]:focus, .btn-primary[disabled]:hover, fieldset[disabled] .btn-primary.focus, fieldset[disabled] .btn-primary:focus, fieldset[disabled] .btn-primary:hover {
+	  background-color: #009f93;
+	  border-color: #066f66;
+	}
+
+	.btn-primary {
+	  color: #fff;
+	  background-color: #009f93;
+	  border-color: #1d8c7d;
+	}
+
+	.btn-primary:hover {
+	  color: #fff;
+	  background-color: #009f93;
+	  border-color: #1d8c7d;
+	}
+
+/* */
+
+/* ================================================================
+=  Nav Bar 
+=  ================================================================ */
+
+	.navbar-nav  .dropdown .dropdown-menu > li > a[href="#"] {
+		color: #ccc;
+	}
+
+	.navbar-header .navbar-brand {
+		color: white;
+	}
+	.navbar-header .navbar-brand span {
+		vertical-align: middle;
+	}
+	.navbar-header .navbar-brand i {
+		display: inline-block;
+		overflow: hidden;
+		width: 40px;
+		height: auto;
+		float: left;
+		margin-right: 9px;
+		vertical-align: middle;	
+		margin-top: -9px;
+	}
+
+	.navbar-header .navbar-brand i img {
+		width: 100%;
+		height: auto;
+	}
+
+/* */
+
+/* ================================================================
+=  Main
+=  ================================================================ */
+
+	.main {
+		margin-bottom: 2em;
+		min-height: 800px;
+	}
+
+	.main .col-md-4 {
+		padding: 0 2em;
+	}
+	.main .col-md-4 p {
+		font-weight: 300;
+	}
+
+/* */
+
+
+/* ================================================================
+=  Footer 
+=  ================================================================ */
+
+	.footer {
+		color: white;
+		background-color: #cccno;
+		text-align: center;
+		height: 70px;	
+		padding: 1em 0;
+		position: relative;
+		z-index: 1001; // 1 nivel mas que la navegacion lateral para que quede por encima
+		p {    
+			> span {
+				font-size: 11px;
+				display: block;				
+			}
+		}
+	}
+
+	.logo-footer {
+		width: 100px;
+		height: 100%;
+		margin: auto;
+		img {
+			display: block;
+			width: 100%;
+			height: auto;
+			position: relative;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+	}
+
+	.footer {
+		width: calc(100% - 250px;
+		margin-left: 250px;
+		.container {
+			width: 100%;
+		}	
+	}
+	body.no-sidebar .footer {
+		width: 100%;
+		margin-left: 0;
+		@media (min-width: 768px) {
+			.container {
+				width: 750px;
+			}
+		}
+		@media (min-width: 992px) {
+			.container {
+				width: 970px;
+			}	
+		}
+		@media (min-width: 1200px) {
+			.container {
+				width: 1170px;
+			}	
+		}
+	}
+
+/* */
+
+/* ================================================================
+=  Sidebar 
+=  ================================================================ */
+	
+	.sidebar-nav {
+		padding-top:290px;
+		padding-left: 7px;
+	}
+
+	.sidebar-brand {
+		color:#57d6cc;
+		font-family: Oswald;
+	}
+
+	#sidebar-wrapper {
+		background-color: #066f66;
+	}
+
+	.menu-toggle {
+		margin-left: 35px;
+		border-radius: 15px;
+		margin-top: -30px;
+		padding: 34px 10px 7px 10px;
+	}
+
+	.navbar-right-inner {
+	    float: right;
+	}
+
+	.sidebar-nav li a {
+		color:#fff;
+	}
+
+/* */
+
+
+/* ================================================================
+=  Headings
+=  ================================================================ */
+
+	.hx-title-container {
+	  background-color: #cecece;
+	  width: 100%;
+	  margin-left: -55px;
+	  padding: 2px 0 1px 68px;
+	  border-right: 30px #fff;
+	  position: relative;
+	  margin-bottom: 30px;
+	  font-family: "Oswald",Helvetica,Arial,sans-serif;
+	}
+	.hx-title-container h3 {
+		color: #000;
+		margin-top: 12px;
+	}
+	.hx-title-triangle {
+		width: 0;
+	  height: 0;
+	  border-bottom: 51px solid #cecece;
+	  border-right: 44px solid transparent;
+	  position: absolute;
+	  top: 0;
+	  right: -44px;
+	}
+
+/* */
+
+
+
+/* ================================================================
+=  Templates
+=  ================================================================ */
+
+	.templates * {
+		font-family: sans-serif;
+	}
+
+	.templates #menu-toggle {
+		display: none;
+	}	
+
+	.templates .navbar-nav .dropdown .dropdown-menu > li > a[href="#"] {
+		color: black;
+	}
+
+/* */
+
+

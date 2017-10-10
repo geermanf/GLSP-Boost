@@ -1,0 +1,23 @@
+doctype html5	
+html(lang="es")
+	head
+		title Hexacta Framework Title
+	body
+		<partial-sidebar open= 'elementos'></partial-sidebar>
+		div.container.hx-full-container
+			div.main
+				div#wrapper
+					div#page-content-wrapper
+						div.container-fluid
+							div.row
+								div.hx-title
+									h2.page__name Tablas
+									p.section-description Las tablas son elementos muy utilizados en sitios y/o sistemas como los que se desarrollan en la empresa. Se utilizan para mostrar ordenadamente listados de datos, que mucha veces son demasiado largos y complejos. Además de poder tener una visiòn mucho más ordenada y simple de tantos datos, las tablas pueden a su vez filtrar los datos según las necesidades del usuario, haciendo este listado más concreto y específico. También pueden ordenarse los datos según le convenga al usuario y editar los datos allí mismo.
+								div.block
+									h3.section__title Tipos
+								<code-snippet titulo='Tabla Basica' htmlCode='basicTable'></code-snippet>
+								div(class="block hx-ancla" id="tables")
+								<basic-table></basic-table>
+                            
+									
+<partial-footer></partial-footer>

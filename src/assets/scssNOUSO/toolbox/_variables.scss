@@ -1,0 +1,36 @@
+/*****************************************************/
+/********************* Variables *********************/
+/*****************************************************/
+//colores
+
+$primary-color:#009d91!default;
+$secondary-color:#007780!default;
+$accent-color:#ff7b00!default;
+
+$dark:#555555!default;
+$medium:#6d6e70!default;
+$light:#fafafa!default;
+
+
+// Fuentes
+
+@import url(web-fonts-url(("Open Sans": ("100","300","400","500", "700","900"))));
+@import url(web-fonts-url(("Montserrat": ("100","300","400","500", "700","900"))));
+
+$display-font: 'Montserrat', sans-serif!default;
+$text-font: 'Open Sans', arial, sans-serif!default;
+    
+$base-font-size: 16px;
+$small-font-size: ( 80% * $base-font-size ) / 100%;
+$smaller-font-size: ( 65% * $base-font-size ) / 100%;
+$smallest-font-size: ( 50% * $base-font-size ) / 100%;
+
+// 100,100i,300,300i,400,400i,500,500i,700,700i,900,900i
+$font-thin: 100;
+$font-light: 300;
+$font-regular: 400;
+$font-medium: 500;
+$font-bold: 700;
+$font-black: 900;
+
+$fuentePrincipal: 'Roboto', sans-serif;

@@ -1,0 +1,75 @@
+.hx-small {
+	font-size:$small-font-size;
+}
+
+.hx-smaller {
+	font-size:$smaller-font-size;
+}
+
+.hx-smallest {
+	font-size:$smallest-font-size;
+}
+
+.hx-und {
+	text-decoration: underline;
+}
+
+.hx-lth {
+	text-decoration: line-through;
+}
+
+.hx-ovl {
+	text-decoration: overline;
+}
+
+.hx-mar{
+	background: $primary-color;
+    color: $secondary-color;
+    padding: 2px;
+}
+
+.hx-mir{
+	background: $primary-color;
+    color: $primary-color;
+    padding: 2px;
+}
+
+.hx-emp {
+	font-style: italic; 
+}
+
+.hx-cap {
+	text-transform: capitalize;
+}
+
+.hx-upp {
+	text-transform: uppercase;
+}
+
+.hx-low {
+	text-transform: lowercase;
+}
+
+.hx-thin {
+	font-weight: $font-thin;
+}
+
+.hx-light {
+	font-weight: $font-light;
+}
+
+.hx-regular {
+	font-weight: $font-regular;
+}
+
+.hx-medium {
+	font-weight: $font-medium;
+}
+
+.hx-bold {
+	font-weight: $font-bold;
+}
+
+.hx-black {
+	font-weight: $font-black;
+}
