@@ -1,15 +1,26 @@
 <!DOCTYPE html5	>
 <html lang="es">
   <body>
+<!-- ..................................................... HEADER ..................................................... -->
     <partial-header title='GLSP Boost' description='Te boosteamo pa que salga de bronce'></partial-header>
+<!-- ..................................................... CONTENIDO ..................................................... -->
     <div class="containerWeb">
-
-        <div class="row row1">
-
+<!-- ..................................................... SEPARADOR ..................................................... -->
+            <div class="categories-nav-hold">
+                <div class="categories-nav">
+                    <div class="container">
+                        <span class="title">NUESTROS SERVICIOS</span>
+                    </div><!-- end .container -->
+                </div><!-- end .categories-nav -->
+            </div>
+<!-- ..................................................... ROW 1 ..................................................... -->
+        <section class="row row1" id="firstRow">
             <div class="rowContainer">
 
                 <div class="col-md-6">
-                    <div><img src="http://es.worldboosting.com/assets/img/item1.png" alt="American Football" class='udyr'></div>
+                    <div class="img-render">
+                        <img src="http://es.worldboosting.com/assets/img/item1.png" alt="American Football" class='udyr'>
+                    </div>
                 </div>
                 <div class="col-md-6">
                         <div>
@@ -24,13 +35,13 @@
                             <div class="more"><a routerLink="/buy-boost" routerLinkActive="active">+ Ver precios</a></div>
                         </div><!-- end .category-info -->
                 </div>
-                
+
             </div>
-        </div>
-
-
-        <div class="row row2">
+        </section>
+<!-- ..................................................... ROW 2 ..................................................... -->
+        <section class="row row2">
             <div class="rowContainer">
+
                 <div class="col-md-6">
                     <div>
                         <p class="category-title">Sobre Nosotros</p>
@@ -41,15 +52,22 @@
                     </div><!-- end .column-2 -->
                 </div>
                 <div class="col-md-6">
-                    <img src="http://es.worldboosting.com/assets/img/item5.png" alt="touchdown" class='udyr'>
+                    <div class="img-render">
+                        <img src="http://es.worldboosting.com/assets/img/item5.png" alt="touchdown" class='udyr'>
+                    </div>
                 </div>
+
             </div>
-        </div>
-        <div class="row row3">
+        </section>
+<!-- ..................................................... ROW 3 ..................................................... -->
+        <section class="row row3" id="banner" >
             <div class="rowContainer">
+
                 <div class="col-md-6">
                     <div class="column-2">
-                        <img src="http://es.worldboosting.com/assets/img/item3.png" alt="MOTOR SPORTS" class='udyr'>
+                        <div class="img-render">
+                            <img src="http://es.worldboosting.com/assets/img/item3.png" alt="MOTOR SPORTS" class='udyr'>
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-6">
@@ -60,13 +78,36 @@
                     </div><!-- end .category-title -->
                     <div class="category-info">
                         <div class="section-description">
-                            Si sos un jugador habilidoso de las ligas mas altas del juego (D1-Maestro-Retador), y te gustaría ganar dinero jugando, llena nuestro formulario para trabajar con nosotros!                                    </div><!-- end .description -->
-                        <div class="more"><a href="http://es.worldboosting.com/work/" class="btn btn-red">+ Saber más</a></div>
+                            Si sos un jugador habilidoso de las ligas mas altas del juego (D1-Maestro-Retador), y te gustaría ganar dinero jugando, llena nuestro formulario para trabajar con nosotros! </div><!-- end .description -->
+                        <div class="more"><a href="" class="btn btn-red">+ Saber más</a></div>
                     </div><!-- end .category-info -->
                 </div>
+
             </div>
-        </div>
+        </section>
+<!-- ..................................................... ROW 4 (support-banner) ..................................................... -->
+        <section class="row" id="support-banner">
+
+                <div class="rowContainer">
+                    <div class="col-md-6">
+                        <h2>Have any questions?</h2>
+                        <p>Our Live Customer Support is up 24/7! Talk to us now!</p>
+                        <a href="/faq">
+                            <button class="btn btn-animated btn-light text-uppercase btn-big btn-empty"><span>Frequently Asked Questions</span>
+                            </button>
+                        </a>
+                    </div>
+                    <div class="col-md-6 hidden-sm hidden-xs">
+                        <div class="img-render">
+                                <img src="../../../assets/images/janna.png" alt="" id='janna'>
+                        </div>
+                    </div>
+                </div>
+
+        </section>
+        
   </div>
+<!-- ..................................................... FOOTER ..................................................... -->
     <div class="footer-home"><partial-footer></partial-footer></div>
   </body>
 </html>
