@@ -12,7 +12,9 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './Home/Components/home.component';
 import { FaqComponent } from './FAQ/Components/faq.component';
 import { ContactComponent } from './Contacto/Components/contact.component';
+import { FormComponent } from './Contacto/Components/form.component';
 import { BoostComponent } from './Boost/Components/boost.component';
+import { AppService } from './Contacto/Services/contacto.service';
 
 import {PartialModule} from './Partials/partials.module';
 
@@ -34,7 +36,10 @@ import {PartialModule} from './Partials/partials.module';
     FaqComponent,
     ContactComponent,
     BoostComponent,
+    FormComponent,
   ],
+  exports: [FormComponent],
+  providers: [AppService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

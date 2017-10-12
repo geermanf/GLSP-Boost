@@ -1,0 +1,26 @@
+        <section class="row row1" id="firstRow">
+            <div class="rowContainer">
+
+                <div style="color: black;" class="col-md-6">
+                    <form (submit)="sendEmail(message)">
+                        <div>
+                          <label for="name">Name</label>
+                          <input type="text" name="name" placeholder="Your Name" [(ngModel)]="message.name">
+                        </div>
+                        <div>
+                          <label for="email">Email</label>
+                          <input type="text" name="email" placeholder="Your Email" [(ngModel)]="message.email">
+                        </div>
+                        <div>
+                          <label for="message">Message</label>
+                          <textarea rows="6" name="message" [(ngModel)]="message.message"></textarea>
+                        </div>
+                        <button type="submit">Send Email</button>
+                      </form>
+                </div>
+                <div class="col-md-6">
+                    <img src="../../../assets/images/tristana.png" alt="American Football" id='skt'>
+                </div>
+
+            </div>
+        </section>

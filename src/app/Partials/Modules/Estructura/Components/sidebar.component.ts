@@ -3,7 +3,7 @@ import { Component, Input } from '@angular/core';
 
 @Component({
   templateUrl: './sidebar.component.html',
-  styleUrls: ['../../../../../assets/css/main.css', '../../../../../assets/css/demo.css'],
+  styleUrls: ['../../../../../assets/css/estructura.css', '../../../../../assets/css/estilos.css'],
   selector: 'partial-sidebar'
 })
 export class SidebarComponent {

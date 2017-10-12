@@ -1,6 +1,3 @@
-<!DOCTYPE html5	>
-<html lang="es">
-  <body>
 <!-- ..................................................... HEADER ..................................................... -->
     <partial-header title='GLSP Boost' description='Te boosteamo pa que salga de bronce'></partial-header>
 <!-- ..................................................... CONTENIDO ..................................................... -->
@@ -18,21 +15,23 @@
             <div class="rowContainer">
 
                 <div class="col-md-6">
-                    <div class="img-render">
-                        <img src="http://es.worldboosting.com/assets/img/item1.png" alt="American Football" class='udyr'>
-                    </div>
+                    
+                    <img src="../../../assets/images/skt.png" alt="American Football" id='skt'>
                 </div>
+
                 <div class="col-md-6">
-                        <div>
+                        <div class="info-container">
                             <p class="category-title">¡Elige tu nivel!</p>
                             <div class="category-title totals">
                                 Sea cual sea tu rango, nosotros te haremos subir al que desees.
-                            </div>
-                        </div><!-- end .category-title -->
-                        <div class="category-info">
+                            
+                            </div><!-- end .category-title -->
                             <div class="section-description">
-                                Simplemente tienes que colocar tu division actual y tu division deseada en la seccion compras y nosotros haremos el resto, te llevaremos a la division deseada de la manera mas rapida y segura.</div><!-- end .description -->
-                            <div class="more"><a routerLink="/buy-boost" routerLinkActive="active">+ Ver precios</a></div>
+                                Simplemente tienes que colocar tu division actual y tu division deseada en la seccion compras y nosotros haremos el resto, te llevaremos a la division deseada de la manera mas rapida y segura.
+                            </div><!-- end .description -->
+                            <a routerLink="/buy-boost" routerLinkActive="active">
+                                <button class="hx-btn hx-btn-transparente" style="padding: 1em 5em 1em 5em;"><span>Ver Precios</span></button>
+                            </a>
                         </div><!-- end .category-info -->
                 </div>
 
@@ -43,71 +42,72 @@
             <div class="rowContainer">
 
                 <div class="col-md-6">
-                    <div>
+                    <div class="info-container">
                         <p class="category-title">Sobre Nosotros</p>
-                        <p class="section-description">
+                        <div class="section-description" style="font-size: 14px">
                             World Boosting fue creado hace 3 años con el fin de ofrecer un servicio de calidad para los jugadores de League of Legends. Con alrededor de 5.000 servicios brindados y clientes 100% satisfechos en más de 15 países y 7 regiones activas (100% de reputación positiva), World Boosting es la empresa más completa y estructurada de Elo Boost. Ofrecemos a los clientes un servicio responsable, personalizado, rápido, discreto garantizando la efectividad, la transparencia, el tiempo de entrega de la compra y la privacidad de la información de las cuentas y del comprador.
-                        </p>
-                        <p><a href="#" class="btn btn-red">+ Contáctanos</a></p>
+                        </div>
                     </div><!-- end .column-2 -->
                 </div>
                 <div class="col-md-6">
-                    <div class="img-render">
-                        <img src="http://es.worldboosting.com/assets/img/item5.png" alt="touchdown" class='udyr'>
-                    </div>
+
+                    <img src="../../../assets/images/kindred.png" alt="" id='kindred'>
+
                 </div>
 
             </div>
         </section>
 <!-- ..................................................... ROW 3 ..................................................... -->
-        <section class="row row3" id="banner" >
+        <section class="row row3" >
             <div class="rowContainer">
 
                 <div class="col-md-6">
-                    <div class="column-2">
-                        <div class="img-render">
-                            <img src="http://es.worldboosting.com/assets/img/item3.png" alt="MOTOR SPORTS" class='udyr'>
-                        </div>
-                    </div>
+
+                    <img src="../../../assets/images/ezreal.png" alt="" id='ezreal'>
+                    
                 </div>
                 <div class="col-md-6">
-                    <div>
+                    <div class="info-container">
                         <p class="category-title">Trabaja con Nosotros</p>
                         <div class="category-title totals">
-                            Gana dinero y divertite al mismo tiempo!</div>
-                    </div><!-- end .category-title -->
-                    <div class="category-info">
+                            Gana dinero y divertite al mismo tiempo!
+                        </div><!-- end .category-title -->
                         <div class="section-description">
-                            Si sos un jugador habilidoso de las ligas mas altas del juego (D1-Maestro-Retador), y te gustaría ganar dinero jugando, llena nuestro formulario para trabajar con nosotros! </div><!-- end .description -->
-                        <div class="more"><a href="" class="btn btn-red">+ Saber más</a></div>
+                            Si sos un jugador habilidoso de las ligas mas altas del juego (D1-Maestro-Retador), y te gustaría ganar dinero jugando, llena nuestro formulario para trabajar con nosotros!
+                        </div><!-- end .description -->                       
+                        <a routerLink="/contact" routerLinkActive="active">
+                            <button class="hx-btn hx-btn-transparente" style="padding: 1em 5em 1em 5em;"><span>Contactanos</span></button>
+                        </a>
                     </div><!-- end .category-info -->
                 </div>
 
             </div>
         </section>
+        
 <!-- ..................................................... ROW 4 (support-banner) ..................................................... -->
-        <section class="row" id="support-banner">
+        
+        <section class="row row4" >
+            <div class="rowContainer">
 
-                <div class="rowContainer">
-                    <div class="col-md-6">
-                        <h2>Have any questions?</h2>
-                        <p>Our Live Customer Support is up 24/7! Talk to us now!</p>
-                        <a href="/faq">
-                            <button class="btn btn-animated btn-light text-uppercase btn-big btn-empty"><span>Frequently Asked Questions</span>
-                            </button>
+                <div class="col-md-6">
+                    <div class="info-container">
+                        <p class="category-title">Have any questions?</p>
+                        <div class="section-description">
+                            <p>Our Live Customer Support is up 24/7! Talk to us now!</p>
+                        </div>
+                        <a routerLink="/faq" routerLinkActive="active">
+                            <button class="hx-btn hx-btn-transparente" style="padding: 1em 5em 1em 5em;"><span>Preguntas Frecuentes</span></button>
                         </a>
                     </div>
-                    <div class="col-md-6 hidden-sm hidden-xs">
-                        <div class="img-render">
-                                <img src="../../../assets/images/janna.png" alt="" id='janna'>
-                        </div>
-                    </div>
+                </div>
+                <div class="col-md-6">
+                    <img src="../../../assets/images/janna2.png" alt="" id='janna'>
                 </div>
 
+            </div>
         </section>
         
   </div>
 <!-- ..................................................... FOOTER ..................................................... -->
     <div class="footer-home"><partial-footer></partial-footer></div>
-  </body>
-</html>
+

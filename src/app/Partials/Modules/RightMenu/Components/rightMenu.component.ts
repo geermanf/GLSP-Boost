@@ -2,7 +2,7 @@ import { Component, HostListener, ElementRef, Input } from '@angular/core';
 import { getTitles } from './titulos';
 @Component({
     selector: 'right-menu',
-    styleUrls: ['../../../../../assets/css/main.css', '../../../../../assets/css/demo.css', 'style.css'],
+    styleUrls: ['../../../../../assets/css/estructura.css', '../../../../../assets/css/estilos.css', 'style.css'],
     templateUrl: 'rightMenu.component.html'
 })
 
