@@ -10,6 +10,7 @@ import { HomeComponent } from './Home/Components/home.component';
 import { FaqComponent } from './FAQ/Components/faq.component';
 import { ContactComponent } from './Contacto/Components/contact.component';
 import { BoostComponent } from './Boost/Components/boost.component';
+import { TerminosComponent } from './Terminos/Components/terminos.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -17,6 +18,7 @@ const routes: Routes = [
   { path: 'faq', component: FaqComponent },
   { path: 'buy-boost', component: BoostComponent },
   { path: 'contact', component: ContactComponent },
+  { path: 'terminos', component: TerminosComponent },
 ];
 
 @NgModule({

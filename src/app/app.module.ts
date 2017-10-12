@@ -14,6 +14,10 @@ import { FaqComponent } from './FAQ/Components/faq.component';
 import { ContactComponent } from './Contacto/Components/contact.component';
 import { FormComponent } from './Contacto/Components/form.component';
 import { BoostComponent } from './Boost/Components/boost.component';
+import { TerminosComponent } from './Terminos/Components/terminos.component';
+
+
+
 import { AppService } from './Contacto/Services/contacto.service';
 
 import {PartialModule} from './Partials/partials.module';
@@ -37,6 +41,7 @@ import {PartialModule} from './Partials/partials.module';
     ContactComponent,
     BoostComponent,
     FormComponent,
+    TerminosComponent,
   ],
   exports: [FormComponent],
   providers: [AppService],

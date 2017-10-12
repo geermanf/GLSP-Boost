@@ -53,15 +53,14 @@ li {
   color: #fff;
   box-shadow: inset 0px -2px 30px #000000; }
   .jumbotron__title {
-    font-weight: 700;
+    font-weight: 600;
     letter-spacing: 1px;
-    margin-bottom: 0.3em;
     font-family: "Montserrat", sans-serif;
     text-shadow: 0px 1px 2px grey; }
   .jumbotron__description {
     font-weight: 300;
     width: 60%;
-    margin-left: 1.5em;
+    margin-left: 0.7em;
     margin-right: auto;
     margin-bottom: 30px;
     text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); }
