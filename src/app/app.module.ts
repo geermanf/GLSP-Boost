@@ -7,8 +7,8 @@ import { AppRoutingModule } from './app-routing.module';
 import 'rxjs/add/operator/toPromise';
 import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
-import {MatSelectModule} from '@angular/material';
 
+import {DropdownModule} from 'primeng/primeng';
 import {TabViewModule} from 'primeng/primeng';
 
 import { AppComponent } from './app.component';
@@ -22,6 +22,7 @@ import { BoostComponent } from './Boost/Components/boost.component';
 import { NetasComponent } from './Boost/Module/netas.component';
 import { PrimerasComponent } from './Boost/Module/primeras.component';
 import { SubirComponent } from './Boost/Module/subir.component';
+import { ImgDivisionComponent } from './Boost/Module/imgDivision.component';
 import { Tab } from './Boost/Components/tab.component';
 import { TabsComponent } from './Boost/Components/tabs.component';
 
@@ -41,7 +42,7 @@ import {PartialModule} from './Partials/partials.module';
     ScrollToModule.forRoot(),
     RouterModule,
     TabViewModule,
-    MatSelectModule,
+    DropdownModule,
 
     AppRoutingModule,
     PartialModule,
@@ -58,10 +59,11 @@ import {PartialModule} from './Partials/partials.module';
     NetasComponent,
     PrimerasComponent,
     SubirComponent,
+    ImgDivisionComponent,
     TabsComponent,
     Tab,
   ],
-  exports: [FormComponent, NetasComponent, PrimerasComponent, SubirComponent],
+  exports: [FormComponent, NetasComponent, PrimerasComponent, SubirComponent, ImgDivisionComponent],
   providers: [AppService, DivisionService],
   bootstrap: [AppComponent],
 })

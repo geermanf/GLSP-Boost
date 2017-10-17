@@ -1,5 +1,8 @@
 export class Division {
-    name: string;
-    price: number;
-    logo: any;
+    label: string;
+    value: {
+        price: number;
+        logo: any;
+        subDivs: Division[];
+    };
 }

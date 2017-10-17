@@ -24,12 +24,6 @@ module.exports = webpackMerge(commonConfig, {
       }
     }),
     new ExtractTextPlugin('[name].[hash].css'),
-    new webpack.DefinePlugin({
-      'process.env': {
-        'ENV': JSON.stringify(ENV)
-      },
-      CAR_LOGO_URL: JSON.stringify("/assets/")
-    }),
     new webpack.LoaderOptionsPlugin({
       htmlLoader: {
         minimize: false // workaround for ng2
@@ -37,7 +31,8 @@ module.exports = webpackMerge(commonConfig, {
     }),
       new CopyWebpackPlugin([       
           // Copy directory contents to {output}/to/directory/
-          {from: './favicon.ico', to: './'},
+          {from: './favicon.png', to: './'},
+          {from: './data', to: './data'}
       ])
   ]
 });

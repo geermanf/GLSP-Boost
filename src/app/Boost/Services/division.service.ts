@@ -8,7 +8,7 @@ export class DivisionService {
     constructor(private http: Http) {}
 
         getDivisions() {
-            return this.http.get('./divisiones.json')
+            return this.http.get('./data/divisiones.json')
                         .toPromise()
                         .then(res => <Division[]> res.json().data)
                         .then(data => { return data; });
