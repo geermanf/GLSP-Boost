@@ -1,0 +1,158 @@
+{
+    "data": [{
+        "name": "Bronce 5",
+        "price": 0,
+        "logo": "../../../assets/images/bronze_5.png"
+    },
+
+    {
+        "name": "Bronce 4",
+        "price": 0,
+        "logo": "../../../assets/images/bronze_4.png"
+    },
+
+    {
+        "name": "Bronce 3",
+        "price": 0,
+        "logo": "../../../assets/images/bronze_3.png"
+    },
+    
+    {
+        "name": "Bronce 2",
+        "price": 0,
+        "logo": "../../../assets/images/bronze_2.png"
+    },
+    
+    {
+        "name": "Bronce 1",
+        "price": 0,
+        "logo": "../../../assets/images/bronze_1.png"
+    },
+
+    {
+        "name": "Plata 5",
+        "price": 0,
+        "logo": "../../../assets/images/silver_5.png"
+    },
+    
+    {
+        "name": "Plata 4",
+        "price": 0,
+        "logo": "../../../assets/images/silver_4.png"
+    },
+        
+    {
+        "name": "Plata 3",
+        "price": 0,
+        "logo": "../../../assets/images/silver_3.png"
+    },
+        
+    {
+        "name": "Plata 2",
+        "price": 0,
+        "logo": "../../../assets/images/silver_2.png"
+    },
+        
+    {
+        "name": "Plata 1",
+        "price": 0,
+        "logo": "../../../assets/images/silver_1.png"
+    },
+
+    {
+        "name": "Oro 5",
+        "price": 0,
+        "logo": "../../../assets/images/gold_5.png"
+    },
+
+    {
+        "name": "Oro 5",
+        "price": 0,
+        "logo": "../../../assets/images/gold_4.png"
+    },
+
+    {
+        "name": "Oro 5",
+        "price": 0,
+        "logo": "../../../assets/images/gold_3.png"
+    },
+
+    {
+        "name": "Oro 5",
+        "price": 0,
+        "logo": "../../../assets/images/gold_2.png"
+    },
+
+    {
+        "name": "Oro 5",
+        "price": 0,
+        "logo": "../../../assets/images/gold_1.png"
+    },
+
+    {
+        "name": "Platino 5",
+        "price": 0,
+        "logo": "../../../assets/images/platinum_5.png"
+    },
+
+    {
+        "name": "Platino 4",
+        "price": 0,
+        "logo": "../../../assets/images/platinum_4.png"
+    },
+
+    {
+        "name": "Platino 3",
+        "price": 0,
+        "logo": "../../../assets/images/platinum_3.png"
+    },
+
+    {
+        "name": "Platino 2",
+        "price": 0,
+        "logo": "../../../assets/images/platinum_2.png"
+    },
+
+    {
+        "name": "Platino 1",
+        "price": 0,
+        "logo": "../../../assets/images/platinum_1.png"
+    },
+
+    {
+        "name": "Diamante 5",
+        "price": 0,
+        "logo": "../../../assets/images/diamond_5.png"
+    },
+
+    {
+        "name": "Diamante 4",
+        "price": 0,
+        "logo": "../../../assets/images/diamond_4.png"
+    },
+
+    {
+        "name": "Diamante 3",
+        "price": 0,
+        "logo": "../../../assets/images/diamond_3.png"
+    },
+
+    {
+        "name": "Diamante 2",
+        "price": 0,
+        "logo": "../../../assets/images/diamond_2.png"
+    },
+
+    {
+        "name": "Diamante 1",
+        "price": 0,
+        "logo": "../../../assets/images/diamond_1.png"
+    },
+
+    {
+        "name": "Master",
+        "price": 0,
+        "logo": "../../../assets/images/master_5.png"
+    }]
+}
+

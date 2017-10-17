@@ -1,55 +1,158 @@
-<!DOCTYPE html5	>
-<html lang="es">
-  <body>
-    <partial-header></partial-header>
-    <div class="container">
-      <div class="main">
-        <div class="row">
-          <div class="col-md-4">
-            <div class="block-feature"><a href="#/Buttons"><img src="../../../assets/images/elements-icon-alt@2x.png" alt="elementos"/></a>
-              <h2 class="block-feature__title">Elementos UI</h2>
-              <p class="block-feature__description">Elementos UI prediseñados listos para aplicar en cualquier proyecto.</p>
-              <p><a class="btn btn-primary block-feature__button" href="#/Buttons" role="button">Ver todos</a></p>
+<!-- ..................................................... HEADER ..................................................... -->
+<partial-header title='F.A.Q.' description='Preguntas frecuentes'></partial-header>
+<!-- ..................................................... CONTENIDO ..................................................... -->
+    <div class="containerWeb" >
+<!-- ..................................................... SEPARADOR ..................................................... -->
+            <div class="categories-nav-hold">
+                <div class="categories-nav">
+                    <div class="container">
+                        <span class="title">Las respuestas a todas tus dudas en un solo lugar!</span>
+                    </div><!-- end .container -->
+                </div><!-- end .categories-nav -->
             </div>
-          </div>
-          <div class="col-md-4">
-            <div class="block-feature"><a href="#/Tables"><img src="../../../assets/images/components-icon-alt@2x.png" alt="elementos"/></a>
-              <h2 class="block-feature__title">Componentes</h2>
-              <p class="block-feature__description">Tablas, dropdowns, sliders y más componentes totalmente adaptables y customizables.</p>
-              <p><a class="btn btn-primary block-feature__button" href="#/Tables" role="button">Ver todos</a></p>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="block-feature"><a href="#/Template"><img src="../../../assets/images/templates-icon-alt@2x.png" alt="elementos"/></a>
-              <h2 class="block-feature__title">Templates</h2>
-              <p class="block-feature__description">Serie de templates para aplicar y customizar a medida de cada proyecto.</p>
-              <p><a class="btn btn-primary block-feature__button" href="#/Template" role="button">Ver todos</a></p>
-            </div>
+<!-- ..................................................... ROW 1 ..................................................... -->
+<section class="row rowWhiteGrey" id="sombraArriba">
+        <div class="rowFAQContainer" id="faqs" >
+<!-- ..................................................... COLUMN 1 ..................................................... -->
+            <div class="col-md-6">
+                  <div class="faqCont" id="about">
+                      <!-- ..................................................... ABOUT ..................................................... -->
+                      <h1> Sobre GLSP Boost</h1>
+                      <h3 class="consigna" (click)='changeShow(1)' [ngClass]='{activeC: selected === 1}'>¿Cómo funciona este servicio?</h3>
+                      <div *ngIf='selected === 1' [@fadeInOut]>
+                          <p>Al contratar a World Boosting estas mejorando la división y MMR de tu cuenta en las Partidas Clasificatorias. Después de haber recibido su pago y la información de usuario, uno de nuestro Boosters de alto nivel (D1-Maestro-Retador) comenzará a subir de nivel su cuenta.
+                              Todos nuestros jugadores tienen la experiencia y la motivación necesaria para garantizar una calidad sin igual y la velocidad que solamente encontrará con nosotros . </p>
+                      </div>
+                      <h3 class="consigna" (click)='changeShow(2)' [ngClass]='{activeC: selected === 2}'>¿Cómo puedo estar seguro de que mi cuenta no será robada?</h3>
+                      <div *ngIf='selected === 2' [@fadeInOut]>
+                          <p>Cada cuenta está vinculada a un correo personal, sin este, no se puede modificar ningún dato de la cuenta como contraseña o mismo correo. World Boosting jamas te pedira ese correo, por lo que es imposible que sea robada.
+                              Su cuenta está segura con nosotros, hemos hecho todo lo posible para asegurarnos que así sea.</p>
+                      </div>
+                      <h3 class="consigna" (click)='changeShow(3)' [ngClass]='{activeC: selected === 3}'>¿Cuales son los servidores en los cuales trabajan?
+                      </h3>
+                      <div *ngIf='selected === 3' [@fadeInOut]>
+                          <p>Por el momento, estamos trabajando en los siguientes servidores: NA, LAN, BR, LAS, EUW, EUNE, OCE</p>
+                      </div>
+                      <h3 class="consigna" (click)='changeShow(4)' [ngClass]='{activeC: selected === 4}'>Usted no trabajan en mi servidor, cuándo puedo esperar que esto cambie?</h3>
+                      <div *ngIf='selected === 4' [@fadeInOut]>
+                          <p>Te recomendamos contactarte con el soporte tecnico para mas informacion sobre esto.</p>
+                      </div>
+                  </div>
+                  <!-- ..................................................... PAGOS ..................................................... -->
+                  <div class="faqCont" id="pagos">
+                    <h1> Pagos</h1>
+                    <h3 class="consigna" (click)='changeShow(5)' [ngClass]='{activeC: selected === 5}'>He hecho mi pago, ¿ahora qué?</h3>
+                    <div *ngIf='selected ===5' [@fadeInOut]>
+                        <p>Una vez acreditado el pago, se ingresa la cuenta a nuestra base de datos para que pueda ser trabajada por nuestros boosters durante los próximos días hasta la finalización del pedido.</p>
+                    </div>
+                    <h3 class="consigna" (click)='changeShow(6)' [ngClass]='{activeC: selected === 6}'>Cuales son los métodos de pago?</h3>
+                    <div *ngIf='selected === 6' [@fadeInOut]>
+                        <p>Contamos con diversos modos de pago dependiendo del país en que te encuentres, para más información comunicate con nuestro soporte online. </p>
+                    </div>
+                    <h3 class="consigna" (click)='changeShow(7)' [ngClass]='{activeC: selected === 7}'>El pago es seguro?</h3>
+                    <div *ngIf='selected === 7' [@fadeInOut]>
+                        <p>Todos los sistemas de pagos que usamos (Paypal y PayU) son sumamente seguros y profesionales, de manera que su dinero y compra esta protegida</p>
+                    </div>
+                  </div>
+                  <!-- ..................................................... OTROS ..................................................... -->
+                  <div class="faqCont" id="otros">
+                      <h1> Otros</h1>
+                      <h3 class="consigna" (click)='changeShow(8)' [ngClass]='{activeC: selected === 8}'>He cometido un error en mi pedido y he puesto datos erroneos de mi cuenta ¿qué debo hacer?</h3>
+                      <div *ngIf='selected === 8' [@fadeInOut]>
+                          <p>Póngase en contacto con nosotros a través del soporte en vivo, chat de facebook, skype, o correo y vamos a solucionar el problema tan pronto como sea posible.</p>
+                      </div>
+                      <h3 class="consigna" (click)='changeShow(9)' [ngClass]='{activeC: selected === 9}'>Tengo una pregunta que no puedo encontrar en el FAQ, ¿cómo puedo preguntarles?</h3>
+                      <div *ngIf='selected === 9' [@fadeInOut]>
+                          <p> Usted puede hacer cualquier pregunta a través de nuestro soporte en vivo, chat de facebook, skype, o correo. Responderemos tan pronto como sea posible. </p>
+                      </div>
+                  </div>
+                </div>
+<!-- ..................................................... COLUMN 2 ..................................................... -->
+            <div class="col-md-6">
+                <!-- ..................................................... SERVICIOS ..................................................... -->
+                <div class="faqCont" id="servicios">
+                    <h1>Nuestros Servicios</h1>
+                    <h3 class="consigna" (click)='changeShow(10)' [ngClass]='{activeC: selected === 10}'>¿Solo un booster jugara mi cuenta?</h3>
+                    <div *ngIf='selected === 10' [@fadeInOut]>
+                        <p> Solo un booster es asignado a tu cuenta. Es una medida de seguridad que muchos sitios web no logran comprender. Si un booster no puede jugar debido a una emergencia, será reemplazado por otro para asegurarse de que su pedido sea completado rápidamente. </p>
+                    </div>
+                    <h3 class="consigna" (click)='changeShow(11)' [ngClass]='{activeC: selected === 11}'>¿Los boosters tienen acceso a mi IP y RP?</h3>
+                    <div *ngIf='selected === 11' [@fadeInOut]>
+                        <p>Los boosters no están autorizados a utilizar RPs a menos que se les de la autorización para hacerlo. En cuanto a los IP podrían ser utilizados en caso de que faltasen runas o algun campeon para acelerar el proceso de boosteo.</p>
+                    </div>
+                    <h3 class="consigna"(click)='changeShow(12)' [ngClass]='{activeC: selected === 12}'>¿Puedo espectear las partidas, mientras el booster juega con mi cuenta?</h3>
+                    <div *ngIf='selected === 12' [@fadeInOut]>
+                        <p>Si, por supuesto! Podes hacerlo desde alguna página que se lo permita o desde alguna cuenta secundaria o algún amigo.</p>
+                    </div>
+                    <h3 class="consigna"(click)='changeShow(13)' [ngClass]='{activeC: selected === 13}'>¿Qué pasa si mi booster no está haciendo un trabajo de mi agrado? ¿Puedo cambiar de booster?</h3>
+                    <div *ngIf='selected === 13' [@fadeInOut]>
+                        <p>Sí, poniéndose en contacto con nosotros, explicando la situación, la analizaremos y se puede cambiar de booster</p>
+                    </div>
+                    <h3 class="consigna"(click)='changeShow(14)' [ngClass]='{activeC: selected === 14}'>¿Qué pasa si un booster fue reportado y por ese motivo nos banearon la cuenta?</h3>
+                    <div *ngIf='selected === 14' [@fadeInOut]>
+                        <p>Tenemos reglas estrictas sobre el comportamiento en las partidas. Nuestros boosters jamás tendrá un comportamiento tóxico dentro de la partida.</p>
+                    </div>
+                    <h3 class="consigna"(click)='changeShow(15)' [ngClass]='{activeC: selected === 15}'>¿Cuánto tiempo va a trabajar en mi cuenta?</h3>
+                    <div *ngIf='selected === 15' [@fadeInOut]>
+                        <p>Hay muchos factores que pueden influir en el tiempo que se necesita para completar su pedido. Depende de algunas variables que no podemos controlar, como el estado del servidor, conexión a Internet, etc. Nuestros boosters harán el trabajo lo más rápido posible, y son recompensados &#8203;&#8203;por ello.</p>
+                    </div>
+                    <h3 class="consigna"(click)='changeShow(16)' [ngClass]='{activeC: selected === 16}'>¿Puedo jugar en mi cuenta durante el proceso de boosteo?</h3>
+                    <div *ngIf='selected === 16' [@fadeInOut]>
+                        <p>Sí, puedes jugar Partidas Normales sin problema, solo asegurate de que el booster no esté usándola en ese momento lo cual podría retrasar el trabajo. Recorda que NO podes jugar Partidas Clasificatorias durante el proceso.</p>
+                    </div>
+                    <h3 class="consigna"(click)='changeShow(17)' [ngClass]='{activeC: selected === 17}'>¿Puedo jugar duo con mi booster?</h3>
+                    <div *ngIf='selected === 17' [@fadeInOut]>
+                        <p>Sí, por supuesto puede jugar DuoQ con su booster, sólo tiene que elegir esta opción en la página.</p>
+                    </div>
+                    <h3 class="consigna"(click)='changeShow(18)' [ngClass]='{activeC: selected === 18}'>¿Se puede ganar solo mis juegos de promoción?</h3>
+                    <div *ngIf='selected === 18' [@fadeInOut]>
+                        <p> Sí, por supuesto, en la opción “Comprar Victorias” tenes para elegir un número de victorias que quieras que se gane, en caso que sea partidas de la promocion, sera asi.</p>
+                    </div>
+                    <h3 class="consigna"(click)='changeShow(19)' [ngClass]='{activeC: selected === 19}'>Pagué por una división, pero el booster salteo de división a una extra a la solicitada ¿tengo que pagar por esto?</h3>
+                    <div *ngIf='selected === 19' [@fadeInOut]>
+                        <p> Por supuesto que no, el precio del pedido inicial sigue siendo el mismo.</p>
+                    </div>
+                    <h3 class="consigna"(click)='changeShow(20)' [ngClass]='{activeC: selected === 20}'>¿Por cada victoria me dan menos de 15 puntos en la liga, ¿Puedo usar la primera opción para el boost ?</h3>
+                    <div *ngIf='selected === 20' [@fadeInOut]>
+                        <p>No, debes usar la opción de “Comprar Victorias”.</p>
+                    </div>
+                    <h3 class="consigna"(click)='changeShow(21)' [ngClass]='{activeC: selected === 21}'>¿Puedo elegir los campeones que quiero que se jueguen?</h3>
+                    <div *ngIf='selected === 21' [@fadeInOut]>
+                        <p> Si se puede dar una prioridad a ciertos campeones que elijas, pero recuerda que el booster siempre priorizará subir rapido de nivel y podrá elegir otros que crea más conveniente según la partida.</p>
+                    </div>
+                    <h3 class="consigna"(click)='changeShow(22)' [ngClass]='{activeC: selected === 22}'>Puedo elegir los  horarios en que trabajaran con mi cuenta?</h3>
+                    <div *ngIf='selected === 22' [@fadeInOut]>
+                        <p>Los horarios son fijados por el cliente, para su mayor comodidad</p>
+                    </div>
+                </div>
           </div>
         </div>
-        <div class="row">
-          <h3 class="section-name">Fácil de usar, adaptar y expandir</h3>
-          <div class="col-md-4">
-            <div class="block-feature"><img src="../../../assets/images/responsive-icon@2x.png" alt="elementos"/>
-              <h2 class="block-feature__title">Responsive</h2>
-              <p class="block-feature__description">Todos los elementos y componentes se adaptan a cualquier medida de pantalla.</p>
+</section>
+<!-- ..................................................... ROW 2 ..................................................... -->     
+<section class="row row4Red" style="min-height:300px" id="sombraArriba">
+    <div class="rowContainer">
+
+        <div class="col-md-6">
+            <div class="info-container">
+                <p class="category-title" style="font-size:36px">No resolvimos tus dudas?</p>
+                <div class="section-description">
+                    <p>Contactanos! Un booster va a responderte en instantes</p>
+                </div>
+                <a routerLink="/contact" routerLinkActive="active">
+                    <button class="hx-btn hx-btn-transparente" style="padding: 1em 5em 1em 5em;"><span>Contacto</span></button>
+                </a>
             </div>
-          </div>
-          <div class="col-md-4">
-            <div class="block-feature"><img src="../../../assets/images/bootstrap-sass-icon@2x.png" alt="elementos"/>
-              <h2 class="block-feature__title">Bootstrap / Sass</h2>
-              <p class="block-feature__description">Utilizamos Bootstrap y Sass para generar un código fácil de adaptar y expandir.</p>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="block-feature"><img src="../../../assets/images/angular-icon@2x.png" alt="elementos"/>
-              <h2 class="block-feature__title">Angular</h2>
-              <p class="block-feature__description">Elegimos Angular para lograr la mayor fluidez posible entre el usuario y el sistema.</p>
-            </div>
-          </div>
         </div>
-      </div>
+        <div class="col-md-6">
+            <img src="../../../assets/images/nidalee.png" alt="" style="height:400px;">
+        </div>
+
     </div>
+</section>
+        
+  </div>
+
+  
+<!-- ..................................................... FOOTER ..................................................... -->
     <div class="footer-home"><partial-footer></partial-footer></div>
-  </body>
-</html>
+

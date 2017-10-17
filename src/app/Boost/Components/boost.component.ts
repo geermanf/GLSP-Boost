@@ -4,4 +4,6 @@ import { Component } from '@angular/core';
   templateUrl: './boost.component.html',
   styleUrls: ['../../../assets/css/estructura.css', '../../../assets/css/estilos.css']
 })
-export class BoostComponent {}
+export class BoostComponent {
+  activeTab: string = 'subir';
+}
