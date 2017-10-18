@@ -5,16 +5,130 @@
 <!-- ..................................................... SEPARADOR ..................................................... -->
 <!-- ..................................................... ROW 2 COLUMN 1 ..................................................... -->
     <section class="row rowWhite" >
-      <div class="rowContainer" >
+      <div class="rowContainer" style="height:750px" >
           <div class="col-md-12">
               <tabs class="nav">
-                <tab [tabTitle]="'Tab 1'">  <subir-divisiones></subir-divisiones>     </tab>
-                <tab tabTitle="Tab 2">      <victorias-netas></victorias-netas>       </tab>
-                <tab tabTitle="Tab 3">      <primeras-partidas></primeras-partidas>   </tab>
+                <tab [tabTitle]="'Subir Divisiones'">  <subir-divisiones></subir-divisiones>     </tab>
+                <tab tabTitle="Victorias Netas">      <victorias-netas></victorias-netas>       </tab>
+                <tab tabTitle="Partidas de Posicionamiento">      <primeras-partidas></primeras-partidas>   </tab>
               </tabs>
           </div>
       </div>
     </section>
+    <!-- ..................................................... ROW 1 ..................................................... -->
+    <section class="row rowRed" id="sombraArriba">
+        <div class="rowContainer">
+
+            <div class="col-md-6">
+                
+                <img src="../../../assets/images/skt.png" alt="American Football" id='skt'>
+            </div>
+
+            <div class="col-md-6">
+                    <div class="info-container">
+                        <p class="category-title">¿Cómo funciona?</p>
+                        <div class="section-description">
+                                1. Elige el servicio que deseas comprar. <br>
+                                2. Hace Click en “Comprar” para ser redirigido a la plataforma de pagos correspondiente y completar la transacción.<br>
+                                3. Una vez acreditado el pago comunícate con alguno de nosotros vía chat de la página o chat Facebook para ingresar tu cuenta a nuestra base de datos y empezar el trabajo.<br>
+                        </div><!-- end .description -->
+                    </div><!-- end .category-info -->
+            </div>
+
+        </div>
+    </section>
+<!-- ..................................................... ROW 2 ..................................................... -->
+    <section class="row rowWhite" id="sombra">
+        <div class="rowContainer">
+
+            <div class="col-md-6">
+                <div class="info-container">
+                    <p class="category-title">Calculador de Boost a medida</p>
+                    <div class="section-description" style="font-size: 14px">
+                            Un rapido calculo en nuestra calculadora, les proveera del precio exacto para recibir boost a la división deseada. Ofrecemos Boost de división, Boost de victorias y las 10 partidas de posicionamiento al inicio de la temporada.<br>
+                            Boost de Divisiones: Ingresa tu rank actual, el cual está en su perfil de invocador (Ej. Oro III). Luego, ingresa la liga deseada de su boost, en 'Grado Deseado'. En ese momento, se te informara del precio final, expresado en pesos argentinos.<br>
+                            Boost de Victorias: Ingresa su rank actual, el cual está en tu perfil de invocador (Ej. Oro III). Luego, ingresa la cantidad de victorias que desees. En ese momento, se te informara del precio final, expresado en pesos argentinos.<br>
+                            Partidas de Posicionamiento: Ingresa la cantidad de partidas de posicionamiento que desees. Un total de 10 partidas de posicionamiento son necesarias para determinar tu división al inicio de la temporada. En ese momento, expresado en pesos argentinos.
+                    </div>
+                </div><!-- end .column-2 -->
+            </div>
+            <div class="col-md-6">
+
+                <img src="../../../assets/images/riven.png" alt="" id='kindred'>
+
+            </div>
+
+        </div>
+    </section>
+<!-- ..................................................... ROW 3 ..................................................... -->
+    <section class="row rowRed" id="sombraArriba">
+        <div class="rowContainer" >
+
+            <div class="col-md-6">
+
+                <img src="../../../assets/images/ezreal.png" alt="" id='ezreal'>
+                
+            </div>
+            <div class="col-md-6">
+                <div class="info-container">
+                    <p class="category-title">BOOST DE DIVISIÓN GARANTIZADO</p>
+                    <div class="section-description">
+                            Esta es la opción de compra más común y la forma más rápida de subir de liga. Una vez establecidas las divisiones a subir, comienza el proceso de subir la cuenta hasta dicha liga por nuestros boosters.
+                            Durante este proceso si podrás jugar Normals y Ranked Team sin problemas, siempre y cuando le informes al booster, y se te pedirá que no juegues partidas SoloQ o Duo Ranked porque podría comprometer nuestro trabajo.
+                            El salteo de divisiones no afecta a las victorias compradas. Una vez finalizado el trabajo, obtendrás la foto del pase de liga (Ej. el pase a Diamante V).
+                    </div><!-- end .description -->                       
+                </div><!-- end .category-info -->
+            </div>
+
+        </div>
+    </section>
+    
+<!-- ..................................................... ROW 4 ..................................................... -->
+    
+    <section class="row row4White" id="sombra">
+        <div class="rowContainer">
+
+            <div class="col-md-6">
+                <div class="info-container">
+                    <p class="category-title">VICTORIAS GARANTIZADAS </p>
+                    <div class="section-description">
+                        <p>Una partida perdida en su cuenta, será considerada -1 victoria. Esto significa que, comprando 10 victorias, si el booster pierde 2 partidas, el booster está obligado a ganar 12 partidas. El salteo de divisiones no afecta a las victorias compradas, así como lo hace en la compra de divisiones.
+                         Seguiremos jugando partidas hasta que se consigan las victorias preestablecidas.</p>
+                    </div>
+                    <a routerLink="/faq" routerLinkActive="active">
+                        <button class="hx-btn hx-btn-transparenteBlack" style="padding: 1em 5em 1em 5em;"><span>Preguntas Frecuentes</span></button>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <img src="../../../assets/images/rengar.png" alt="" style="height:500px">
+            </div>
+
+        </div>
+    </section>
+<!-- ..................................................... ROW 5 ..................................................... -->
+    <section class="row rowRed" id="sombraArriba">
+            <div class="rowContainer" >
+    
+                <div class="col-md-6">
+    
+                    <img src="../../../assets/images/kindred.png" alt="" id='ezreal'>
+                    
+                </div>
+                <div class="col-md-6">
+                    <div class="info-container">
+                        <p class="category-title">PARTIDAS PARA PREDETERMINAR SU DIVISIÓN</p>
+                        <div class="section-description">
+                                Las partidas de posicionamiento al inicio de la temporada determinan su división. 
+                                En el caso de que ya haya jugado uno o más partidos, puede comprar las victorias faltantes. 
+                                Garantizamos un mínimo de 8/10 victorias. En el caso de que ocurra un imprevisto y más de 2 partidas sean perdidas, usted será compensado con +2 victorias netas por cada derrota después de la segunda.
+                                Así aseguras conseguir la división más alta posible al inicio de la temporada.
+                        </div><!-- end .description -->                       
+                    </div><!-- end .category-info -->
+                </div>
+    
+            </div>
+        </section>
 </div>
 <!-- ..................................................... FOOTER ..................................................... -->
     <div class="footer-home"><partial-footer></partial-footer></div>

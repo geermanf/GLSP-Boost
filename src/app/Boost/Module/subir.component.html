@@ -1,52 +1,48 @@
     <div class="col-lg-12" style="margin-top:5%;">
         <div class="col-sm-6 col-md-6 col-lg-3 text-center">
 
-            <h4>Current Rank</h4>
+            <h4>Liga Actual</h4>
             <img-division name= {{currentName}}></img-division>
 
-            <div>
+            <div style="margin-bottom:7%;">
                 <p-dropdown [style]="{'width':'150px'}" [options]="divisions" [(ngModel)]="currentDiv" placeholder="Selecciona una division" (onChange)="changeCurrent()"></p-dropdown>
             </div>
-            <div>
+            <div style="margin-top:7%;">
                 <p-dropdown [style]="{'width':'150px'}" [options]="subDivsC" [(ngModel)]="currentSubDiv" placeholder="Selecciona una division" (onChange)="changeCurrentSub()"></p-dropdown>
             </div>
 
 
         </div>
 
-        <div class="col-sm-6 col-md-6 col-lg-3 text-center desired">
-            <h4>Desired Rank</h4>
+        <div class="col-sm-6 col-md-6 col-lg-3 text-center desired" >
+            <h4>Liga Deseada</h4>
             <img-division name= {{desiredName}}></img-division>
 
-            <div>
+            <div style="margin-bottom:7%;">
                 <p-dropdown [style]="{'width':'150px'}" [options]="divisions" [(ngModel)]="desiredDiv" placeholder="Selecciona una division" (onChange)="changeDesired()"></p-dropdown>
             </div>
-            <div>
+            <div style="margin-top:7%;">
                 <p-dropdown [style]="{'width':'150px'}" [options]="subDivsD" [(ngModel)]="desiredSubDiv" placeholder="Selecciona una division" (onChange)="changeDesiredSub()"></p-dropdown>
             </div>
         </div>
 
         <div class="col-sm-12 col-md-12 col-lg-6">
-            <h4>Your Order:</h4>
+                <div class="text-center">
+                    <h2>Tu Orden:</h2>
 
-            <ul>
-                <li>
-                    Division Boost: Silver (Division V) -&gt; Silver (Division IV)
-                </li>
-                <li>
-                    <strong>
-                        Total Cost:
-                        <span>
-                            <span style="color: green;">
-                                18€ ($21)
-                            </span>
-
-                            <s>20€ ($23)</s>
-                        </span>
-
-                    </strong>
-                </li>
-            </ul>
+                    <ul>
+                        <li>
+                            <h2>{{currentName}} <img src="../../../assets/images/flechaVerde.png" style="width:30px;"> {{desiredName}}</h2>
+                        </li>
+                        <li>
+                            
+                        <strong>
+                            Costo total: <h3 style="color: green;"> {{costo}}$ </h3>
+        
+                        </strong>
+                        </li>
+                    </ul>
+                </div>
 
             <form method="POST" accept-charset="UTF-8" action="/payment/charge/paypal">
                 <input name="_token" type="hidden" value="gv1hAF0LyFbIF9puyBE5Ix1UJhsFCyCSP0wni5Vb">
@@ -57,32 +53,20 @@
                 <input name="custom" type="hidden" value="current_mmr=1220&amp;desired_mmr=1290&amp;current_tier=1&amp;current_division=1&amp;desired_tier=1&amp;desired_division=2&amp;current_lp=1&amp;promo_code=0">
 
                 <div class="text-center">
-                    <button type="submit" class="btn btn-primary btn-purchase btn-paypal" title="Pay with PayPal">
+                    <button type="submit" class="hx-btn hx-btn-positive" title="Pay with MP" id="btnPago">
                         PAGAR
                     </button>
 
                     <div class="payments-others">
-                        looking for other payment methods?
-                        <a href="/contact">contact us</a>.
+                        Buscas otros medios de pago?
+                        <a routerLink="/contact" routerLinkActive="active">Contactanos!!</a>
                     </div>
                 </div>
             </form>
-
-            <hr>
-            <div class="font-small text-justify">
-                <strong>Every account is VPN protected by our dedicated application.</strong>
-                <br> Contains full boost to 0LP desired league, no additional costs if we fail promotion (we will play until
-                we achieve it).
-                <br>
-                <br> Queues:
-                <strong>Solo/Duo (5v5), Flex Summoners Rift (5v5), Flex Twisted Treeline (3v3)</strong>.
-                <br>
-                <br> Service available for North America, Europe West, Europe Nordic &amp; East, Brazil, Latin America, Russia,
-                Turkey, Oceania, Korea and Japan!
-                <br>
-                <br>
-
-                <!--By purchasing on our website you agree to our <a href="/terms-of-service">Terms of Service</a>.-->
+            <div style="padding-left:30%">
+                    <img src="../../../assets/images/pagos.png" style="width:200px;">
             </div>
+
+
         </div>
     </div>

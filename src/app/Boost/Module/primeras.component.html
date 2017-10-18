@@ -1,0 +1,68 @@
+<div class="col-lg-12" style="margin-top:5%;">
+        <div class="col-sm-6 col-md-6 col-lg-3 text-center">
+
+            <h4>Liga en la Season pasada</h4>
+            <img-division name= {{currentName}}></img-division>
+
+            <div style="margin-bottom:7%;">
+                <p-dropdown [style]="{'width':'150px'}" [options]="divisions" [(ngModel)]="currentDiv" placeholder="Selecciona una division" (onChange)="changeCurrent()"></p-dropdown>
+            </div>
+            <div style="margin-top:7%;">
+                <p-dropdown [style]="{'width':'150px'}" [options]="subDivsC" [(ngModel)]="currentSubDiv" placeholder="Selecciona una division" (onChange)="changeCurrentSub()"></p-dropdown>
+            </div>
+
+
+        </div>
+
+        <div class="col-sm-6 col-md-6 col-lg-3 text-center desired" >
+            <h4>Cantidad de Victorias</h4>
+
+            <p style="font-size:100px;">{{cantidadVictorias}}</p>
+            <p-slider [(ngModel)]="cantidadVictorias" [style]="{'width':'250px'}" [animate]="true" [min]="1" [max]="10" (onChange)="calculateCost()"></p-slider>
+            
+        </div>
+
+        <div class="col-sm-12 col-md-12 col-lg-6">
+                <div class="text-center">
+                    <h2>Tu Orden:</h2>
+
+                    <ul>
+                        <li>
+                            <h3>{{cantidadVictorias}} Victorias - {{currentName}} en Season pasada </h3>
+                        </li>
+                        <li>
+                            
+                        <strong>
+                            Costo total: <h3 style="color: green;"> {{costo}}$ </h3>
+        
+                        </strong>
+                        </li>
+                    </ul>
+                </div>
+
+            <form method="POST" accept-charset="UTF-8" action="/payment/charge/paypal">
+                <input name="_token" type="hidden" value="gv1hAF0LyFbIF9puyBE5Ix1UJhsFCyCSP0wni5Vb">
+                <input name="cost" type="hidden" value="18">
+                <input name="name" type="hidden" value="Silver (Division V) -> Silver (Division IV)">
+                <input name="number" type="hidden" value="4">
+                <input name="type" type="hidden" value="division">
+                <input name="custom" type="hidden" value="current_mmr=1220&amp;desired_mmr=1290&amp;current_tier=1&amp;current_division=1&amp;desired_tier=1&amp;desired_division=2&amp;current_lp=1&amp;promo_code=0">
+
+                <div class="text-center">
+                    <button type="submit" class="hx-btn hx-btn-positive" title="Pay with MP" id="btnPago">
+                        PAGAR
+                    </button>
+
+                    <div class="payments-others">
+                        Buscas otros medios de pago?
+                        <a routerLink="/contact" routerLinkActive="active">Contactanos!!</a>
+                    </div>
+                </div>
+            </form>
+            <div style="padding-left:30%">
+                    <img src="../../../assets/images/pagos.png" style="width:200px;">
+            </div>
+
+
+        </div>
+    </div>

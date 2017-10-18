@@ -9,8 +9,10 @@
                     [{
                         "label": "Bronce 5",
                         "value":{
+                            "id": 0,
                             "name": "Bronce 5",
                             "price": 0,
+                            "pricepp": 19,
                             "logo": "../../../assets/images/bronze_5.png"
                         }
                     },
@@ -18,8 +20,10 @@
                     {
                         "label": "Bronce 4",
                         "value":{
+                            "id": 1,
                             "name": "Bronce 4",
-                            "price": 0,
+                            "price": 95,
+                            "pricepp": 19,
                             "logo": "../../../assets/images/bronze_4.png"
                         }
                     },
@@ -27,8 +31,10 @@
                     {
                         "label": "Bronce 3",
                         "value":{
+                            "id": 2,
                             "name": "Bronce 3",
-                            "price": 0,
+                            "price": 95,
+                            "pricepp": 25,
                             "logo": "../../../assets/images/bronze_3.png"
                         }
                     },
@@ -36,8 +42,10 @@
                     {
                         "label": "Bronce 2",
                         "value":{
+                            "id": 3,
                             "name": "Bronce 2",
-                            "price": 0,
+                            "price": 127,
+                            "pricepp": 25,
                             "logo": "../../../assets/images/bronze_2.png"
                         }
                     },
@@ -45,8 +53,10 @@
                     {
                         "label": "Bronce 1",
                         "value":{
+                            "id": 4,
                             "name": "Bronce 1",
-                            "price": 0,
+                            "price": 127,
+                            "pricepp": 38,
                             "logo": "../../../assets/images/bronze_1.png"
                         }
                     }
@@ -61,8 +71,10 @@
                     [{
                         "label": "Plata 5",
                         "value":{
+                            "id": 5,
                             "name": "Plata 5",
-                            "price": 0,
+                            "price": 190,
+                            "pricepp": 24,
                             "logo": "../../../assets/images/silver_5.png"
                         }
                     },
@@ -70,8 +82,10 @@
                     {
                         "label": "Plata 4",
                         "value":{
+                            "id": 6,
                             "name": "Plata 4",
-                            "price": 0,
+                            "price": 121,
+                            "pricepp": 24,
                             "logo": "../../../assets/images/silver_4.png"
                         }
                     },
@@ -79,8 +93,10 @@
                     {
                         "label": "Plata 3",
                         "value":{
+                            "id": 7,
                             "name": "Plata 3",
-                            "price": 0,
+                            "price": 121,
+                            "pricepp": 32,
                             "logo": "../../../assets/images/silver_3.png"
                         }
                     },
@@ -88,8 +104,10 @@
                     {
                         "label": "Plata 2",
                         "value":{
+                            "id": 8,
                             "name": "Plata 2",
-                            "price": 0,
+                            "price": 161,
+                            "pricepp": 32,
                             "logo": "../../../assets/images/silver_2.png"
                         }
                     },
@@ -97,8 +115,10 @@
                     {
                         "label": "Plata 1",
                         "value":{
+                            "id": 9,
                             "name": "Plata 1",
-                            "price": 0,
+                            "price": 161,
+                            "pricepp": 48,
                             "logo": "../../../assets/images/silver_1.png"
                         }
                     }
@@ -113,8 +133,10 @@
                         [{
                             "label": "Oro 5",
                             "value":{
+                                "id": 10,
                                 "name": "Oro 5",
-                                "price": 0,
+                                "price": 242,
+                                "pricepp": 31,
                                 "logo": "../../../assets/images/gold_5.png"
                             }
                         },
@@ -122,8 +144,10 @@
                         {
                             "label": "Oro 4",
                             "value":{
+                                "id": 11,
                                 "name": "Oro 4",
-                                "price": 0,
+                                "price": 155,
+                                "pricepp": 31,
                                 "logo": "../../../assets/images/gold_4.png"
                             }
                         },
@@ -131,8 +155,10 @@
                         {
                             "label": "Oro 3",
                             "value":{
+                                "id": 12,
                                 "name": "Oro 3",
-                                "price": 0,
+                                "price": 155,
+                                "pricepp": 41,
                                 "logo": "../../../assets/images/gold_3.png"
                             }
                         },
@@ -140,8 +166,10 @@
                         {
                             "label": "Oro 2",
                             "value":{
+                                "id": 13,
                                 "name": "Oro 2",
-                                "price": 0,
+                                "price": 207,
+                                "pricepp": 41,
                                 "logo": "../../../assets/images/gold_2.png"
                             }
                         },
@@ -149,8 +177,10 @@
                         {
                             "label": "Oro 1",
                             "value":{
+                                "id": 14,
                                 "name": "Oro 1",
-                                "price": 0,
+                                "price": 207,
+                                "pricepp": 61,
                                 "logo": "../../../assets/images/gold_1.png"
                             }
                         }
@@ -165,8 +195,10 @@
                     [{
                         "label": "Platino 5",
                         "value":{
+                            "id": 15,
                             "name": "Platino 5",
-                            "price": 0,
+                            "price": 310,
+                            "pricepp": 45,
                             "logo": "../../../assets/images/platinum_5.png"
                         }
                     },
@@ -174,8 +206,10 @@
                     {
                         "label": "Platino 4",
                         "value":{
+                            "id": 16,
                             "name": "Platino 4",
-                            "price": 0,
+                            "price": 224,
+                            "pricepp": 45,
                             "logo": "../../../assets/images/platinum_4.png"
                         }
                     },
@@ -183,8 +217,10 @@
                     {
                         "label": "Platino 3",
                         "value":{
+                            "id": 17,
                             "name": "Platino 3",
-                            "price": 0,
+                            "price": 224,
+                            "pricepp": 50,
                             "logo": "../../../assets/images/platinum_3.png"
                         }
                     },
@@ -192,8 +228,10 @@
                     {
                         "label": "Platino 2",
                         "value":{
+                            "id": 18,
                             "name": "Platino 2",
-                            "price": 0,
+                            "price": 299,
+                            "pricepp": 60,
                             "logo": "../../../assets/images/platinum_2.png"
                         }
                     },
@@ -201,8 +239,10 @@
                     {
                         "label": "Platino 1",
                         "value":{
+                            "id": 19,
                             "name": "Platino 1",
-                            "price": 0,
+                            "price": 299,
+                            "pricepp": 90,
                             "logo": "../../../assets/images/platinum_1.png"
                         }
                     }
@@ -217,8 +257,10 @@
                     [{
                         "label": "Diamante 5",
                         "value":{
+                            "id": 20,
                             "name": "Diamante 5",
-                            "price": 0,
+                            "price": 448,
+                            "pricepp": 173,
                             "logo": "../../../assets/images/diamond_5.png"
                         }
                     },
@@ -226,8 +268,10 @@
                     {
                         "label": "Diamante 4",
                         "value":{
+                            "id": 21,
                             "name": "Diamante 4",
-                            "price": 0,
+                            "price": 862,
+                            "pricepp": 173,
                             "logo": "../../../assets/images/diamond_4.png"
                         }
                     },
@@ -235,8 +279,10 @@
                     {
                         "label": "Diamante 3",
                         "value":{
+                            "id": 22,
                             "name": "Diamante 3",
-                            "price": 0,
+                            "price": 862,
+                            "pricepp": 230,
                             "logo": "../../../assets/images/diamond_3.png"
                         }
                     },
@@ -244,8 +290,10 @@
                     {
                         "label": "Diamante 2",
                         "value":{
+                            "id": 23,
                             "name": "Diamante 2",
-                            "price": 0,
+                            "price": 1150,
+                            "pricepp": 230,
                             "logo": "../../../assets/images/diamond_2.png"
                         }
                     },
@@ -253,13 +301,33 @@
                     {
                         "label": "Diamante 1",
                         "value":{
+                            "id": 24,
                             "name": "Diamante 1",
-                            "price": 0,
+                            "price": 1150,
+                            "pricepp": 345,
                             "logo": "../../../assets/images/diamond_1.png"
                         }
                     }
                 ]
             }
-    }]
+            
+    },
+    {
+        "label": "Maestro",
+        "value":{
+            "subDivs":
+                    [{
+                        "label": "Mestro",
+                        "value":{
+                            "id": 25,
+                            "name": "Maestro",
+                            "price": 1725,
+                            "pricepp": 493,
+                            "logo": "../../../assets/images/master.png"
+                        }
+                    }]
+                }
+        }
+]
 }
 

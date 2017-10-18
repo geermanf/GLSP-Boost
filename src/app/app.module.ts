@@ -10,6 +10,7 @@ import { RouterModule } from '@angular/router';
 
 import {DropdownModule} from 'primeng/primeng';
 import {TabViewModule} from 'primeng/primeng';
+import {SliderModule} from 'primeng/primeng';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './Home/Components/home.component';
@@ -43,6 +44,7 @@ import {PartialModule} from './Partials/partials.module';
     RouterModule,
     TabViewModule,
     DropdownModule,
+    SliderModule,
 
     AppRoutingModule,
     PartialModule,

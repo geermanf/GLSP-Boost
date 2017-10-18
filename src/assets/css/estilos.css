@@ -666,13 +666,12 @@ li {
 }
 
 .pane {
-  margin-top: 5%;
+  margin-top: 15%;
 }
 
-.columna1 {
-  float: left;
-}
-
-.columna2 {
-  float: right;
+#btnPago {
+  width: 13em;
+  height: 3.5em;
+  font-weight: bold;
+  font-size: 14px;
 }
