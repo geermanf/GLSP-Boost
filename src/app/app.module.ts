@@ -27,6 +27,8 @@ import { ImgDivisionComponent } from './Boost/Module/imgDivision.component';
 import { Tab } from './Boost/Components/tab.component';
 import { TabsComponent } from './Boost/Components/tabs.component';
 
+import { ComprarComponent } from './Boost/Components/comprar.component';
+
 
 
 import { DivisionService } from './Boost/Services/division.service';
@@ -58,6 +60,8 @@ import {PartialModule} from './Partials/partials.module';
     FormComponent,
     TerminosComponent,
 
+    ComprarComponent,
+
     NetasComponent,
     PrimerasComponent,
     SubirComponent,
@@ -65,7 +69,7 @@ import {PartialModule} from './Partials/partials.module';
     TabsComponent,
     Tab,
   ],
-  exports: [FormComponent, NetasComponent, PrimerasComponent, SubirComponent, ImgDivisionComponent],
+  exports: [FormComponent, NetasComponent, PrimerasComponent, SubirComponent, ImgDivisionComponent, ComprarComponent],
   providers: [AppService, DivisionService],
   bootstrap: [AppComponent],
 })

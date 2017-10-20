@@ -12,6 +12,8 @@ import { ContactComponent } from './Contacto/Components/contact.component';
 import { BoostComponent } from './Boost/Components/boost.component';
 import { TerminosComponent } from './Terminos/Components/terminos.component';
 
+import { ComprarComponent } from './Boost/Components/comprar.component';
+
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
@@ -19,6 +21,7 @@ const routes: Routes = [
   { path: 'buy-boost', component: BoostComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'terminos', component: TerminosComponent },
+  { path: 'comprar', component: ComprarComponent},
 ];
 
 @NgModule({
