@@ -50,4 +50,5 @@ export class NetasComponent implements OnInit {
     calculateCost() {
         this.costo = this.currentSubDiv.pricepp * this.cantidadVictorias;
     }
+
 }

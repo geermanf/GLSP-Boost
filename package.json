@@ -55,6 +55,7 @@
     "ng2-clipboard": "^1.0.35",
     "ng2-eonasdan-datetimepicker": "0.0.5",
     "ng2-file-upload": "^1.2.1",
+    "ng2-modal": "0.0.25",
     "ng2-scroll-to": "^1.0.7",
     "ng2-simple-global": "^1.2.4",
     "ng2-slim-loading-bar": "^4.0.0",

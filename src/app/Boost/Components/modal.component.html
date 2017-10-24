@@ -1,0 +1,72 @@
+
+
+       
+        <!-- ..................................................... FORMULARIO ..................................................... -->
+
+        <div class="text-center">
+            <p class="modal-description">Por favor ingresa los datos de tu cuenta para que nuestros boosters puedan acceder</p>
+        </div>
+
+
+        <ngForm method="POST" action="">
+
+        <div class="col-sm-6 col-md-6 col-lg-6">
+
+            <div class="form-group">
+                <input class="form-control" placeholder="Email" name="email" type="text" [(ngModel)]="email">
+                <br>
+                <input class="form-control" placeholder="Nombre de Invocador" name="invocador" type="text" [(ngModel)]="invocador">
+                <br>
+                <input class="form-control" placeholder="Usuario" name="usuario" type="text" [(ngModel)]="usuario">
+                <br>
+                <input class="form-control" placeholder="Contraseña" name="pwd" type="password" [(ngModel)]="pwd">
+                <br>
+                <select class="form-control" name="servidor" [(ngModel)]="servidor">
+                    <option>LAS</option>
+                    <option>LAN</option>
+                    <option>BR</option>
+                </select>
+                <br>
+                <div class="form-group">
+                    <textarea class="form-control" rows="6" placeholder="Comentario" name="comentario" cols="50" [(ngModel)]="comentario"></textarea>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-6 col-md-6 col-lg-6">
+
+                    <div class="text-center" style="margin-top:20%;">
+                        <h3>Tu Orden:</h3>
+    
+                        <ul>
+                            <li *ngIf='tipo === "subir"'>
+                                <h4>{{current}} a {{desired}}</h4>
+                            </li>
+                            <li *ngIf='tipo === "netas"'>
+                                    <h4>{{victorias}} Victorias en {{current}}  </h4>
+                            </li>
+
+                            <li style="margin-top:20%;">
+                                
+                            <strong>
+                                Costo total: <h3 style="color: green;"> {{costo}}$ </h3>
+            
+                            </strong>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="text-center" style="margin-top:40%;" >
+                            <button class="hx-btn hx-btn-positive" type="button" id="btnPago" (click)=pagar()>Pagar</button>
+                    </div>
+
+
+
+        </div>
+        <div class="text-center">
+                <p class="modal-description">{{error}}</p>
+        </div>
+
+        </ngForm>
+
+

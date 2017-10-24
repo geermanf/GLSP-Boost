@@ -1,2 +1,2 @@
-Web para GLSP Boost. 
+Web para GSLP Boost. 
 Owner German Flores

@@ -7467,7 +7467,7 @@ a:focus, a:hover, a.current {
 .navbar-header .navbar-brand i {
   display: inline-block;
   overflow: hidden;
-  width: 40px;
+  width: 80px;
   height: auto;
   float: left;
   margin-right: 9px;
@@ -7496,6 +7496,7 @@ a:focus, a:hover, a.current {
 
 body.no-sidebar .footer {
   width: 100%;
+  height: 100%;
   margin-left: 0; }
   @media (min-width: 768px) {
     body.no-sidebar .footer .containerWeb {

@@ -40,25 +40,22 @@
                     </ul>
                 </div>
 
-            <form method="POST" accept-charset="UTF-8" action="/payment/charge/paypal">
-                <input name="_token" type="hidden" value="gv1hAF0LyFbIF9puyBE5Ix1UJhsFCyCSP0wni5Vb">
-                <input name="cost" type="hidden" value="18">
-                <input name="name" type="hidden" value="Silver (Division V) -> Silver (Division IV)">
-                <input name="number" type="hidden" value="4">
-                <input name="type" type="hidden" value="division">
-                <input name="custom" type="hidden" value="current_mmr=1220&amp;desired_mmr=1290&amp;current_tier=1&amp;current_division=1&amp;desired_tier=1&amp;desired_division=2&amp;current_lp=1&amp;promo_code=0">
-
                 <div class="text-center">
-                    <button type="submit" class="hx-btn hx-btn-positive" title="Pay with MP" id="btnPago">
-                        PAGAR
-                    </button>
-
-                    <div class="payments-others">
-                        Buscas otros medios de pago?
-                        <a routerLink="/contact" routerLinkActive="active">Contactanos!!</a>
-                    </div>
+                        <button type="button" class="hx-btn hx-btn-positive" id="btnPago" (click)="modal.open()">
+                            Comprar
+                        </button>
+                        <modal #modal>
+                                <modal-header>
+                                        <h2>Datos de tu cuenta</h2>
+                                </modal-header>
+                                <modal-content>
+                                    <div style="height:500px;">
+                                            <form-modal tipo="netas" current="{{currentName}}" victorias="{{cantidadVictorias}}" costo="{{costo}}"></form-modal>
+                                    </div>
+                                </modal-content>
+                        </modal>
                 </div>
-            </form>
+                
             <div style="padding-left:30%">
                     <img src="../../../assets/images/pagos.png" style="width:200px;">
             </div>
