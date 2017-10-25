@@ -32,7 +32,7 @@ module.exports = webpackMerge(commonConfig, {
       new CopyWebpackPlugin([       
           // Copy directory contents to {output}/to/directory/
           {from: './favicon.png', to: './'},
-          {from: './data', to: './data'}
+          {from: './data', to: './data'},
       ])
   ]
 });

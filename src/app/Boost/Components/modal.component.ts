@@ -31,7 +31,8 @@ export class ModalComponent {
         if ((this.email !== '') && (this.invocador !== '') && (this.usuario !== '') && (this.pwd !== '') && (this.servidor !== '')) {
             this.error = '';
 
-            let url = '/restapi/v1/comprar';
+            // OPCION 2 CON REST API (LINK EN URL)
+            let url = 'https://www.gslpboost.com/restapi/v1/comprar';
             let body = {
                     email: this.email,
                     invocador: this.invocador,
@@ -40,9 +41,9 @@ export class ModalComponent {
                     servidor: this.servidor,
                     comentario: this.comentario
                 };
-            let headers = new Headers();
-            headers.set('Authorization', 'asd123');
-            let options = new RequestOptions({ headers: headers });
+
+            let headers = new Headers({ 'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8' });
+            let options = new RequestOptions( { headers: headers });
 
             this.http.post(url, body, options).subscribe();
 

@@ -57,26 +57,10 @@ $app->get('/comprar', function() {
 /* Usando POST para crear un auto */
 
 $app->post('/comprar', 'authenticate', function() use ($app) {
-
-    //next example will insert new conversation
-    
-
-
-
-    // check for required params
-    include('./httpful.phar');
-    $response = array();
-    //capturamos los parametros recibidos y los almacxenamos como un nuevo array
-
-
-/* Usando POST para crear un auto */
-
-$app->post('/comprar', 'authenticate', function() use ($app) {
     
         //next example will insert new conversation
 
         // check for required params
-        include('./httpful.phar');
         $response = array();
         //capturamos los parametros recibidos y los almacxenamos como un nuevo array  pRRXKOl8ikMmt9u	
         
@@ -97,40 +81,21 @@ $app->post('/comprar', 'authenticate', function() use ($app) {
         $param['extra2'] = $app->request->post('email') + ' ' + $app->request->post('usuario') + ' ' + $app->request->post('pwd') + ' ' + $app->request->post('invocador') + ' ' + $app->request->post('servidor');
         $param['extra3'] = $app->request->post('comentario');
         
-        $service_url = 'https://sandbox.gateway.payulatam.com/ppp-web-gateway/';
-        $curl = curl_init($service_url);
-        $curl_post_data = $param;
-        curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
-        curl_setopt($curl, CURLOPT_POST, true);
-        curl_setopt($curl, CURLOPT_POSTFIELDS, $curl_post_data);
-        $curl_response = curl_exec($curl);
-        if ($curl_response === false) {
-            $info = curl_getinfo($curl);
-            curl_close($curl);
-            die('error occured during curl exec. Additioanl info: ' . var_export($info));
-        }
-        curl_close($curl);
-        $decoded = json_decode($curl_response);
-        if (isset($decoded->response->status) && $decoded->response->status == 'ERROR') {
-            die('error occured: ' . $decoded->response->errormessage);
-        }
-        echo 'response ok!';
-        var_export($decoded->response);
+
+
+$url = 'https://sandbox.api.payulatam.com/payments-api/4.0/service.cgi';
+$data = $param;
+
+
+    $ch = curl_init( $url );
+curl_setopt( $ch, CURLOPT_POST, 1);
+curl_setopt( $ch, CURLOPT_POSTFIELDS, $data);
+curl_setopt( $ch, CURLOPT_FOLLOWLOCATION, 1);
+curl_setopt( $ch, CURLOPT_HEADER, 0);
+curl_setopt( $ch, CURLOPT_RETURNTRANSFER, 1);
+
+$response = curl_exec( $ch );
     
-    
-     
-    
-    
-    
-    // if ( is_array($param) ) {
-    //     $response["error"] = false;
-    //     $response["message"] = "post creado satisfactoriamente!";
-    //     $response["auto"] = $param;
-    // } else {
-    //     $response["error"] = true;
-    //     $response["message"] = "Error al crear auto. Por favor intenta nuevamente.";
-    // }
-    // echoResponse(201, $response);
 });
 
 /* corremos la aplicación */
@@ -212,25 +177,13 @@ function authenticate(\Slim\Route $route) {
     $app = \Slim\Slim::getInstance();
  
     // Verifying Authorization Header
-    if (isset($headers['Authorization'])) {
+    if (!(isset($headers['Authorization']))) {
         //$db = new DbHandler(); //utilizar para manejar autenticacion contra base de datos
  
         // get the api key
         $token = $headers['Authorization'];
         
-        // validating api key
-        if (!($token == API_KEY)) { //API_KEY declarada en Config.php
-            
-            // api key is not present in users table
-            $response["error"] = true;
-            $response["message"] = "Acceso denegado. Token inválido";
-            echoResponse(401, $response);
-            
-            $app->stop(); //Detenemos la ejecución del programa al no validar
-            
-        } else {
-            //procede utilizar el recurso o metodo del llamado
-        }
+
     } else {
         // api key is missing in header
         $response["error"] = true;
