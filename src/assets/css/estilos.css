@@ -42,8 +42,113 @@ li {
    Jumbotron
 **********************************************************
 **********************************************************/
+.jumbotron1 {
+  background-image: url("../images/header1.png");
+    /* IE6-9 fallback on horizontal gradient */
+    padding-top: 130px;
+    padding-bottom: 120px;
+    margin: 0;
+    height: 440px;
+    position: relative;
+    overflow: hidden;
+    text-align: left;
+    color: #fff;
+    box-shadow: inset 0px -2px 30px #000000; 
+}
+.jumbotron2 {
+  background-image: url("../images/header2.png");
+    /* IE6-9 fallback on horizontal gradient */
+    padding-top: 130px;
+    padding-bottom: 120px;
+    margin: 0;
+    height: 440px;
+    position: relative;
+    overflow: hidden;
+    text-align: left;
+    color: #fff;
+    box-shadow: inset 0px -2px 30px #000000; 
+}
+.jumbotron3 {
+  background-image: url("../images/header3.png");
+    /* IE6-9 fallback on horizontal gradient */
+    padding-top: 130px;
+    padding-bottom: 120px;
+    margin: 0;
+    height: 440px;
+    position: relative;
+    overflow: hidden;
+    text-align: left;
+    color: #fff;
+    box-shadow: inset 0px -2px 30px #000000; 
+}
+.jumbotron4 {
+  background-image: url("../images/header4.png");
+    /* IE6-9 fallback on horizontal gradient */
+    padding-top: 130px;
+    padding-bottom: 120px;
+    margin: 0;
+    height: 440px;
+    position: relative;
+    overflow: hidden;
+    text-align: left;
+    color: #fff;
+    box-shadow: inset 0px -2px 30px #000000; 
+}
+.jumbotron5 {
+  background-image: url("../images/header5.png");
+    /* IE6-9 fallback on horizontal gradient */
+    padding-top: 130px;
+    padding-bottom: 120px;
+    margin: 0;
+    height: 440px;
+    position: relative;
+    overflow: hidden;
+    text-align: left;
+    color: #fff;
+    box-shadow: inset 0px -2px 30px #000000; 
+}
+.jumbotron6 {
+  background-image: url("../images/header6.png");
+    /* IE6-9 fallback on horizontal gradient */
+    padding-top: 130px;
+    padding-bottom: 120px;
+    margin: 0;
+    height: 440px;
+    position: relative;
+    overflow: hidden;
+    text-align: left;
+    color: #fff;
+    box-shadow: inset 0px -2px 30px #000000; 
+}
+.jumbotron7 {
+  background-image: url("../images/header7.png");
+    /* IE6-9 fallback on horizontal gradient */
+    padding-top: 130px;
+    padding-bottom: 120px;
+    margin: 0;
+    height: 440px;
+    position: relative;
+    overflow: hidden;
+    text-align: left;
+    color: #fff;
+    box-shadow: inset 0px -2px 30px #000000; 
+}
+.jumbotron8 {
+  background-image: url("../images/header8.png");
+    /* IE6-9 fallback on horizontal gradient */
+    padding-top: 130px;
+    padding-bottom: 120px;
+    margin: 0;
+    height: 440px;
+    position: relative;
+    overflow: hidden;
+    text-align: left;
+    color: #fff;
+    box-shadow: inset 0px -2px 30px #000000; 
+}
+
+
 .jumbotron {
-  background-image: url("../images/fondoHome3.png");
   /* IE6-9 fallback on horizontal gradient */
   padding-top: 130px;
   padding-bottom: 120px;
@@ -54,19 +159,19 @@ li {
   text-align: left;
   color: #fff;
   box-shadow: inset 0px -2px 30px #000000; }
-  .jumbotron__title {
+.jumbotron__title {
     font-weight: 600;
     letter-spacing: 1px;
     font-family: "Montserrat", sans-serif;
     text-shadow: 0px 1px 2px grey; }
-  .jumbotron__description {
+.jumbotron__description {
     font-weight: 300;
     width: 60%;
     margin-left: 0.7em;
     margin-right: auto;
     margin-bottom: 30px;
     text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); }
-  .jumbotron__button {
+.jumbotron__button {
     text-transform: uppercase;
     padding: 10px 20px;
     font-size: 13px;
@@ -75,7 +180,7 @@ li {
     margin-top: 30px;
     background-color: #16262b;
     transform: scale(1.2); }
-    .jumbotron__button:hover {
+.jumbotron__button:hover {
       color: #fff;
       text-decoration: none;
       background-color: #060b0c; }

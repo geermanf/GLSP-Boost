@@ -10,5 +10,6 @@ import { Component, Input } from '@angular/core';
 export class HeaderComponent {
     @Input() title: string = 'titulo por defecto, envie parametro title';
     @Input() description: string = 'descripcion por defecto, envie parametro description';
+    @Input() selected: string;
 
 }

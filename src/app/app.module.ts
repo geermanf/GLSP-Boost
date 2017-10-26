@@ -27,8 +27,6 @@ import { ImgDivisionComponent } from './Boost/Module/imgDivision.component';
 import { Tab } from './Boost/Components/tab.component';
 import { TabsComponent } from './Boost/Components/tabs.component';
 
-import { ComprarComponent } from './Boost/Components/comprar.component';
-
 import { ModalComponent } from './Boost/Components/modal.component';
 
 import { ModalModule } from 'ng2-modal';
@@ -64,7 +62,6 @@ import {PartialModule} from './Partials/partials.module';
     FormComponent,
     TerminosComponent,
 
-    ComprarComponent,
     ModalComponent,
 
     NetasComponent,
@@ -74,7 +71,7 @@ import {PartialModule} from './Partials/partials.module';
     TabsComponent,
     Tab,
   ],
-  exports: [FormComponent, NetasComponent, PrimerasComponent, SubirComponent, ImgDivisionComponent, ComprarComponent, ModalComponent],
+  exports: [FormComponent, NetasComponent, PrimerasComponent, SubirComponent, ImgDivisionComponent, ModalComponent],
   providers: [AppService, DivisionService],
   bootstrap: [AppComponent],
 })

@@ -68,5 +68,24 @@
         </div>
 
         </ngForm>
+        
+        <form id="form1" method="post" action="https://gateway.payulatam.com/ppp-web-gateway">
+        <!-- <form id="form1" method="post" action="https://sandbox.gateway.payulatam.com/ppp-web-gateway"> -->
+            <input id="tax" name="tax"           type="hidden"  value="0"  >
+            <input id="taxReturnBase" name="taxReturnBase" type="hidden"  value="0" >
+            <input id="currency" name="currency"      type="hidden"  value="ARS" >
+            <input id="test" name="test"          type="hidden"  value="0" >
 
-
+            <input id="merchantId" name="merchantId"    type="hidden" >
+            <input id="accountId" name="accountId"     type="hidden" >
+            
+            <input id="signature"  name="signature"     type="hidden"    >
+            <input id="referenceCode" name="referenceCode" type="hidden"   >
+            <input id="description" name="description"   type="hidden"    >
+            <input id="amount"   name="amount"        type="hidden"   >
+            <input id="buyerFullName" name="buyerFullName" type="hidden"   >
+            <input id="buyerEmail"  name="buyerEmail"    type="hidden"   >
+            <input id="extra1"   name="extra"        type="hidden"   >
+            <input id="extra2"  name="extra2"        type="hidden"  >
+            
+            </form>
