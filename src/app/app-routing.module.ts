@@ -11,6 +11,7 @@ import { FaqComponent } from './FAQ/Components/faq.component';
 import { ContactComponent } from './Contacto/Components/contact.component';
 import { BoostComponent } from './Boost/Components/boost.component';
 import { TerminosComponent } from './Terminos/Components/terminos.component';
+import { ContratoComponent } from './Terminos/Components/contrato.component';
 
 
 
@@ -21,6 +22,7 @@ const routes: Routes = [
   { path: 'buy-boost', component: BoostComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'terminos', component: TerminosComponent },
+  { path: 'contrato', component: ContratoComponent },
 ];
 
 @NgModule({

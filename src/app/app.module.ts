@@ -18,6 +18,7 @@ import { FaqComponent } from './FAQ/Components/faq.component';
 import { ContactComponent } from './Contacto/Components/contact.component';
 import { FormComponent } from './Contacto/Components/form.component';
 import { TerminosComponent } from './Terminos/Components/terminos.component';
+import { ContratoComponent } from './Terminos/Components/contrato.component';
 import { BoostComponent } from './Boost/Components/boost.component';
 
 import { NetasComponent } from './Boost/Module/netas.component';
@@ -61,6 +62,7 @@ import {PartialModule} from './Partials/partials.module';
     BoostComponent,
     FormComponent,
     TerminosComponent,
+    ContratoComponent,
 
     ModalComponent,
 

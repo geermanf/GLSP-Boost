@@ -20,22 +20,18 @@
                       <h1> Sobre GSLP Boost</h1>
                       <h3 class="consigna" (click)='changeShow(1)' [ngClass]='{activeC: selected === 1}'>¿Cómo funciona este servicio?</h3>
                       <div *ngIf='selected === 1' [@fadeInOut]>
-                          <p>Al contratar a World Boosting estas mejorando la división y MMR de tu cuenta en las Partidas Clasificatorias. Después de haber recibido su pago y la información de usuario, uno de nuestro Boosters de alto nivel (D1-Maestro-Retador) comenzará a subir de nivel su cuenta.
-                              Todos nuestros jugadores tienen la experiencia y la motivación necesaria para garantizar una calidad sin igual y la velocidad que solamente encontrará con nosotros . </p>
+                          <p>Al contratar a GSLPBoost mejorarás la división y mmr de tu cuenta en las partidas clasificatorias.
+                            Después de haber recibido su pago y la información de usuario, uno de nuestro Boosters de alto nivel comenzará a subir de nivel su cuenta.
+                            Todos nuestros jugadores tienen la experiencia y la motivación necesaria para garantizar una calidad sin igual y la velocidad que solamente encontrará con nosotros. </p>
                       </div>
                       <h3 class="consigna" (click)='changeShow(2)' [ngClass]='{activeC: selected === 2}'>¿Cómo puedo estar seguro de que mi cuenta no será robada?</h3>
                       <div *ngIf='selected === 2' [@fadeInOut]>
-                          <p>Cada cuenta está vinculada a un correo personal, sin este, no se puede modificar ningún dato de la cuenta como contraseña o mismo correo. World Boosting jamas te pedira ese correo, por lo que es imposible que sea robada.
-                              Su cuenta está segura con nosotros, hemos hecho todo lo posible para asegurarnos que así sea.</p>
+                          <p>Cada cuenta está vinculada a un correo personal, sin este, no se puede modificar ningún dato de la cuenta como contraseña o mismo correo.
+                            GSLPBoost jamas te pedira ese correo, por lo que es imposible que sea robada, su cuenta está segura con nosotros.</p>
                       </div>
-                      <h3 class="consigna" (click)='changeShow(3)' [ngClass]='{activeC: selected === 3}'>¿Cuales son los servidores en los cuales trabajan?
-                      </h3>
+                      <h3 class="consigna" (click)='changeShow(3)' [ngClass]='{activeC: selected === 3}'>¿Cuales son los servidores en los cuales trabajan?</h3>
                       <div *ngIf='selected === 3' [@fadeInOut]>
-                          <p>Por el momento, estamos trabajando en los siguientes servidores: NA, LAN, BR, LAS, EUW, EUNE, OCE</p>
-                      </div>
-                      <h3 class="consigna" (click)='changeShow(4)' [ngClass]='{activeC: selected === 4}'>Usted no trabajan en mi servidor, cuándo puedo esperar que esto cambie?</h3>
-                      <div *ngIf='selected === 4' [@fadeInOut]>
-                          <p>Te recomendamos contactarte con el soporte tecnico para mas informacion sobre esto.</p>
+                          <p>Por el momento, estamos trabajando solo en: LAS - LAN - BR</p>
                       </div>
                   </div>
                   <!-- ..................................................... PAGOS ..................................................... -->
@@ -74,23 +70,15 @@
                     <h1>Nuestros Servicios</h1>
                     <h3 class="consigna" (click)='changeShow(10)' [ngClass]='{activeC: selected === 10}'>¿Solo un booster jugara mi cuenta?</h3>
                     <div *ngIf='selected === 10' [@fadeInOut]>
-                        <p> Solo un booster es asignado a tu cuenta. Es una medida de seguridad que muchos sitios web no logran comprender. Si un booster no puede jugar debido a una emergencia, será reemplazado por otro para asegurarse de que su pedido sea completado rápidamente. </p>
+                        <p> Solamente un booster es asignado a tu cuenta. Cualquier problema que tenga el booster, este será reemplazado para completar su pedido rapidamente. </p>
                     </div>
                     <h3 class="consigna" (click)='changeShow(11)' [ngClass]='{activeC: selected === 11}'>¿Los boosters tienen acceso a mi IP y RP?</h3>
                     <div *ngIf='selected === 11' [@fadeInOut]>
-                        <p>Los boosters no están autorizados a utilizar RPs a menos que se les de la autorización para hacerlo. En cuanto a los IP podrían ser utilizados en caso de que faltasen runas o algun campeon para acelerar el proceso de boosteo.</p>
+                        <p>No, a menos que se les de la autorización para hacerlo.</p>
                     </div>
                     <h3 class="consigna"(click)='changeShow(12)' [ngClass]='{activeC: selected === 12}'>¿Puedo espectear las partidas, mientras el booster juega con mi cuenta?</h3>
                     <div *ngIf='selected === 12' [@fadeInOut]>
-                        <p>Si, por supuesto! Podes hacerlo desde alguna página que se lo permita o desde alguna cuenta secundaria o algún amigo.</p>
-                    </div>
-                    <h3 class="consigna"(click)='changeShow(13)' [ngClass]='{activeC: selected === 13}'>¿Qué pasa si mi booster no está haciendo un trabajo de mi agrado? ¿Puedo cambiar de booster?</h3>
-                    <div *ngIf='selected === 13' [@fadeInOut]>
-                        <p>Sí, poniéndose en contacto con nosotros, explicando la situación, la analizaremos y se puede cambiar de booster</p>
-                    </div>
-                    <h3 class="consigna"(click)='changeShow(14)' [ngClass]='{activeC: selected === 14}'>¿Qué pasa si un booster fue reportado y por ese motivo nos banearon la cuenta?</h3>
-                    <div *ngIf='selected === 14' [@fadeInOut]>
-                        <p>Tenemos reglas estrictas sobre el comportamiento en las partidas. Nuestros boosters jamás tendrá un comportamiento tóxico dentro de la partida.</p>
+                        <p>Sí, puedes usar tu cuenta smurf o alguna pagina en línea para verla.</p>
                     </div>
                     <h3 class="consigna"(click)='changeShow(15)' [ngClass]='{activeC: selected === 15}'>¿Cuánto tiempo va a trabajar en mi cuenta?</h3>
                     <div *ngIf='selected === 15' [@fadeInOut]>
@@ -99,10 +87,6 @@
                     <h3 class="consigna"(click)='changeShow(16)' [ngClass]='{activeC: selected === 16}'>¿Puedo jugar en mi cuenta durante el proceso de boosteo?</h3>
                     <div *ngIf='selected === 16' [@fadeInOut]>
                         <p>Sí, puedes jugar Partidas Normales sin problema, solo asegurate de que el booster no esté usándola en ese momento lo cual podría retrasar el trabajo. Recorda que NO podes jugar Partidas Clasificatorias durante el proceso.</p>
-                    </div>
-                    <h3 class="consigna"(click)='changeShow(17)' [ngClass]='{activeC: selected === 17}'>¿Puedo jugar duo con mi booster?</h3>
-                    <div *ngIf='selected === 17' [@fadeInOut]>
-                        <p>Sí, por supuesto puede jugar DuoQ con su booster, sólo tiene que elegir esta opción en la página.</p>
                     </div>
                     <h3 class="consigna"(click)='changeShow(18)' [ngClass]='{activeC: selected === 18}'>¿Se puede ganar solo mis juegos de promoción?</h3>
                     <div *ngIf='selected === 18' [@fadeInOut]>
