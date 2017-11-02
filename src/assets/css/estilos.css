@@ -42,6 +42,7 @@ li {
    Jumbotron
 **********************************************************
 **********************************************************/
+
 .jumbotron1 {
   background-image: url("../images/header1.png");
     /* IE6-9 fallback on horizontal gradient */
@@ -149,6 +150,10 @@ li {
 
 
 .jumbotron {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   /* IE6-9 fallback on horizontal gradient */
   padding-top: 130px;
   padding-bottom: 120px;
