@@ -20,6 +20,8 @@ import { FormComponent } from './Contacto/Components/form.component';
 import { TerminosComponent } from './Terminos/Components/terminos.component';
 import { ContratoComponent } from './Terminos/Components/contrato.component';
 import { BoostComponent } from './Boost/Components/boost.component';
+import { WorkComponent } from './Work/Components/work.component';
+import { FormWorkComponent } from './Work/Components/formWork.component';
 
 import { NetasComponent } from './Boost/Module/netas.component';
 import { PrimerasComponent } from './Boost/Module/primeras.component';
@@ -31,7 +33,6 @@ import { TabsComponent } from './Boost/Components/tabs.component';
 import { ModalComponent } from './Boost/Components/modal.component';
 
 import { ModalModule } from 'ng2-modal';
-
 
 import { DivisionService } from './Boost/Services/division.service';
 import { AppService } from './Contacto/Services/contacto.service';
@@ -72,6 +73,9 @@ import {PartialModule} from './Partials/partials.module';
     ImgDivisionComponent,
     TabsComponent,
     Tab,
+
+    WorkComponent,
+    FormWorkComponent,
   ],
   exports: [FormComponent, NetasComponent, PrimerasComponent, SubirComponent, ImgDivisionComponent, ModalComponent],
   providers: [AppService, DivisionService],

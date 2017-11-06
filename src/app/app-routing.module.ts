@@ -13,6 +13,8 @@ import { BoostComponent } from './Boost/Components/boost.component';
 import { TerminosComponent } from './Terminos/Components/terminos.component';
 import { ContratoComponent } from './Terminos/Components/contrato.component';
 
+import { WorkComponent } from './Work/Components/work.component';
+
 
 
 const routes: Routes = [
@@ -23,6 +25,7 @@ const routes: Routes = [
   { path: 'contact', component: ContactComponent },
   { path: 'terminos', component: TerminosComponent },
   { path: 'contrato', component: ContratoComponent },
+  { path: 'work', component: WorkComponent },
 ];
 
 @NgModule({

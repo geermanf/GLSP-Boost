@@ -43,7 +43,9 @@
                     </div>
                     <h3 class="consigna" (click)='changeShow(6)' [ngClass]='{activeC: selected === 6}'>Cuales son los métodos de pago?</h3>
                     <div *ngIf='selected === 6' [@fadeInOut]>
-                        <p>Contamos con diversos modos de pago dependiendo del país en que te encuentres, para más información comunicate con nuestro soporte online. </p>
+                        <p>Contamos con diversos modos de pago dependiendo del país en que te encuentres, para más información comunicate con nosotros en contacto. <br>
+                            Los precios son expresados en Pesos Argentinos, de todos modos, una vez hecha tu compra, se transforma a tu moneda local.
+                        </p>
                     </div>
                     <h3 class="consigna" (click)='changeShow(7)' [ngClass]='{activeC: selected === 7}'>El pago es seguro?</h3>
                     <div *ngIf='selected === 7' [@fadeInOut]>
