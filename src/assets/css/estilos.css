@@ -537,8 +537,17 @@ li {
   margin-bottom: 30px;
 }
 
-.containerWeb .row {
+/* .containerWeb .row {
   min-height: 35em;
+} */
+
+.maxRow {
+  max-height: 500px;
+
+}
+
+.maxRow .info-container {
+  margin-top: 12%;
 }
 
 .rowGrey {
@@ -594,7 +603,7 @@ li {
   }
 
   #skt{
-    height:510px;
+    height:500px;
   }
 } 
 
@@ -657,6 +666,10 @@ li {
 .info-container {
   margin-top: 15%;
   margin-bottom: 15%;
+
+}
+.info-container.maxH335 {
+  max-height: 335px;
 }
 
 .faqCont {
