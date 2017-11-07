@@ -32,6 +32,8 @@ import { TabsComponent } from './Boost/Components/tabs.component';
 
 import { ModalComponent } from './Boost/Components/modal.component';
 
+import { RedirectComponent } from './Redirect/Components/redirect.component';
+
 import { ModalModule } from 'ng2-modal';
 
 import { DivisionService } from './Boost/Services/division.service';
@@ -64,6 +66,8 @@ import {PartialModule} from './Partials/partials.module';
     FormComponent,
     TerminosComponent,
     ContratoComponent,
+
+    RedirectComponent,
 
     ModalComponent,
 

@@ -15,6 +15,8 @@ import { ContratoComponent } from './Terminos/Components/contrato.component';
 
 import { WorkComponent } from './Work/Components/work.component';
 
+import { RedirectComponent } from './Redirect/Components/redirect.component';
+
 
 
 const routes: Routes = [
@@ -26,6 +28,7 @@ const routes: Routes = [
   { path: 'terminos', component: TerminosComponent },
   { path: 'contrato', component: ContratoComponent },
   { path: 'work', component: WorkComponent },
+  { path: 'redir', component: RedirectComponent },
 ];
 
 @NgModule({
